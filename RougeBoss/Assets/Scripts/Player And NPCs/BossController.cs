@@ -12,13 +12,16 @@ public class BossController : MonoBehaviour
     public int currentAction;
     float actionCounter, shotCounter;
     Vector2 moveDirection;
-    bool halfHealth;
+    int waypointIndex;
+    bool halfHealth, goingbackwardsthroughWaypoints;
     Rigidbody2D body;
     
 
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
+        halfHealth = false;
+        goingbackwardsthroughWaypoints = false;
     }
     
     void Start()
@@ -40,8 +43,12 @@ public class BossController : MonoBehaviour
     {
         if(actionCounter > 0)
         {
-            actionCounter -= Time.deltaTime;
-            
+            actionCounter -= Time.deltaTime;            
+            if(halfHealth && !actions[currentAction].halfHealthAction)
+            {
+                actionCounter = 0;                
+            }
+            else
             Movement();
             Shoot();
         }
@@ -60,15 +67,30 @@ public class BossController : MonoBehaviour
     {
         moveDirection = Vector2.zero;
         if(actions[currentAction].shouldChase)
-        {
-            Debug.Log("Moving towards player not fuctioning");
+        {            
             moveDirection = PlayerController.instance.transform.position - transform.position;
             moveDirection.Normalize();
         }
         if (actions[currentAction].moveToPoint)
-        {
-            Debug.Log("Moving to a point function not available yet. This is for testing purposes");
-            //moveDirection = actions[currentAction].pointToMoveTo.position - transform.position;
+        {            
+            moveDirection = actions[currentAction].pointsToMoveTo[waypointIndex].position - transform.position;
+            if (Vector2.Distance(transform.position, actions[currentAction].pointsToMoveTo[waypointIndex].position) < 0.1f)
+            {
+                if (waypointIndex < actions[currentAction].pointsToMoveTo.Length - 1 && !goingbackwardsthroughWaypoints)
+                {
+                    waypointIndex++;
+                }
+                else
+                {
+                    waypointIndex--;
+                    goingbackwardsthroughWaypoints = true;
+
+                    if (waypointIndex <= 0)
+                    {
+                        goingbackwardsthroughWaypoints = false;
+                    }
+                }
+            }
         }
         else return;
         body.velocity = moveDirection * actions[currentAction].moveSpeed;
@@ -94,7 +116,8 @@ public class BossController : MonoBehaviour
                 shotCounter = actions[currentAction].fireRate;
                 foreach (Transform transform in actions[currentAction].shootingPoints)
                 {
-                    Instantiate(actions[currentAction].bulletPrefab, transform.position, transform.rotation);
+                    GameObject bullet = Instantiate(actions[currentAction].bulletPrefab, transform.position, transform.rotation);
+                    bullet.GetComponent<BulletPhysics>().speed = actions[currentAction].bulletSpeed;
                 }
             }
         }
@@ -125,7 +148,7 @@ public class BossAction
     public bool rotate;
     public float rotationSpeed;
     public GameObject bulletPrefab;
-    public float fireRate;
+    public float fireRate, bulletSpeed;
     [Tooltip("This is the point of rotation for the shooting points")]
     public Transform shootingPointHolder;
     public Transform[] shootingPoints;

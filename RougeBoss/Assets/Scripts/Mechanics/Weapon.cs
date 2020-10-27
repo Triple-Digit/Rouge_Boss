@@ -18,14 +18,13 @@ public class Weapon : MonoBehaviour
     public int activeGun;
 
     #region Active Gun Variables
-    SpriteRenderer activeGunSprite;
-    GameObject activeBulletPrefab;
-    float activeFireRate,activeBulletSpeed;
-    int activeMaxAmmo, currentAmmo, activeBurstAmount;
-    float activeSpreadAngle;
+    
     [SerializeField] Transform shootingPoint;
     List<Quaternion> bulletSpread;
     bool canShoot;
+    public float timeToShoot;
+
+    public bool updateGunVaribles;
     #endregion
     
     [Header("List of weapon types")]
@@ -33,32 +32,42 @@ public class Weapon : MonoBehaviour
     [SerializeField] WeaponType[] guns;
     
     private void Start()
-    {        
-        
+    {
+        timeToShoot = guns[activeGun].fireRate;
     }
 
     private void Update()
     {
+        if(timeToShoot > 0)
+        {
+            timeToShoot -= Time.deltaTime;
+        }
+        
         if (Input.GetButton("Fire1"))
         {
-            Shoot();
+            
+            if(timeToShoot <= 0)
+            {                
+                Shoot();
+                timeToShoot = guns[activeGun].fireRate;
+            }            
         }
+
+        if (updateGunVaribles)
+        {
+            EquipGun(activeGun);
+            updateGunVaribles = false;
+        }
+
     }
 
     public void EquipGun(int weaponIndex)
     {
         weaponIndex = activeGun;
-        //activeGunSprite.sprite = guns[activeGun].gunSprite;        
-        activeBulletPrefab = guns[activeGun].bulletPrefab;
-        activeFireRate = guns[activeGun].fireRate;
-        activeBulletSpeed = guns[activeGun].bulletSpeed;
-        activeMaxAmmo = guns[activeGun].maxAmmo;
-        activeBurstAmount = guns[activeGun].burstAmount;
-        activeSpreadAngle = guns[activeGun].spreadAngle;
-        currentAmmo = activeMaxAmmo;
+        
 
-        bulletSpread = new List<Quaternion>(activeBurstAmount);
-        for(int i = 0; i < activeBurstAmount; ++i)
+        bulletSpread = new List<Quaternion>(guns[activeGun].burstAmount);
+        for(int i = 0; i < guns[activeGun].burstAmount; ++i)
         {
             bulletSpread.Add(Quaternion.Euler(Vector3.zero));
         }
@@ -67,30 +76,21 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
-        if (!canShoot) return;
+        
         int i = 0;
         foreach(Quaternion quaternion in bulletSpread)
         {
             bulletSpread[i] = Random.rotation;
-            GameObject bullet = Instantiate(activeBulletPrefab, shootingPoint.position, shootingPoint.rotation);
-            bullet.transform.rotation = Quaternion.RotateTowards(bullet.transform.rotation, bulletSpread[i], activeSpreadAngle);
+            GameObject bullet = Instantiate(guns[activeGun].bulletPrefab, shootingPoint.position, shootingPoint.rotation);
+            bullet.transform.rotation = Quaternion.RotateTowards(bullet.transform.rotation, bulletSpread[i], guns[activeGun].spreadAngle);
+            bullet.GetComponent<BulletPhysics>().speed = guns[activeGun].bulletSpeed;
             ++i;
         }
 
-        StartCoroutine(CanShoot());
+        
     }
 
-    IEnumerator CanShoot()
-    {
-        canShoot = false;
-        yield return new WaitForSeconds(activeFireRate);
-        canShoot = true;
-    }
-
-
-    
-
-
+      
 }
 #region Weapon type basic variables
 [System.Serializable]

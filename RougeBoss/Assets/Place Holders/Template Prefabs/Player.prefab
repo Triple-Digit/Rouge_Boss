@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 1695382998867409583}
   - component: {fileID: 1695382998867409571}
   - component: {fileID: 1695382998867409580}
-  - component: {fileID: 1695382998867409570}
+  - component: {fileID: 1186878662533427126}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3.5
   aimDirection: {fileID: 1695382999066098809}
---- !u!114 &1695382998867409570
+--- !u!114 &1186878662533427126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -270,11 +270,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1695382998867409582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 134bb77eaef6c6442af9ba5e6e64f21f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c88f842c6f710b4cb05813fd4f95aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer: 1
   maxHealth: 3
-  currentHealth: 3
+  currentHealth: 0
   invincible: 0
   invincibilityDuration: 2
 --- !u!1 &1695382999066098808

@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 3770307500434939587}
   - component: {fileID: 3770307500434939584}
   - component: {fileID: 3770307500434939585}
+  - component: {fileID: 2028597610234433721}
   m_Layer: 0
   m_Name: Boss_Template
   m_TagString: Untagged
@@ -180,6 +181,7 @@ MonoBehaviour:
     rotationSpeed: 0
     bulletPrefab: {fileID: 0}
     fireRate: 0
+    bulletSpeed: 0
     shootingPointHolder: {fileID: 0}
     shootingPoints: []
   - actionType: Shoot
@@ -195,6 +197,7 @@ MonoBehaviour:
     rotationSpeed: 0.5
     bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
     fireRate: 1.2
+    bulletSpeed: 0
     shootingPointHolder: {fileID: 3770307502121507566}
     shootingPoints:
     - {fileID: 3770307501264031475}
@@ -212,6 +215,7 @@ MonoBehaviour:
     rotationSpeed: 1
     bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
     fireRate: 2
+    bulletSpeed: 0
     shootingPointHolder: {fileID: 3770307502121507566}
     shootingPoints:
     - {fileID: 3770307501264031475}
@@ -219,6 +223,23 @@ MonoBehaviour:
     - {fileID: 3770307500928835194}
     - {fileID: 3770307501502482065}
   currentAction: 0
+--- !u!114 &2028597610234433721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3770307500434939590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88f842c6f710b4cb05813fd4f95aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  maxHealth: 20
+  currentHealth: 0
+  invincible: 0
+  invincibilityDuration: 0
 --- !u!1 &3770307500928835195
 GameObject:
   m_ObjectHideFlags: 0

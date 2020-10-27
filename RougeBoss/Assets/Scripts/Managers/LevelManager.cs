@@ -1,18 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    #region Singleton
+    public static LevelManager instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+    #endregion
+            
+    public void LoadLevel(int bossHealth, int weaponIndex)
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void EndLevel(bool bossDefeated)
     {
-        
+        if(bossDefeated)
+        {
+            //Open loading screen, wipe scene of assets and spawn new level
+        }
+        else
+        {
+
+        }
     }
+
+
+
+    
 }

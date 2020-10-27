@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public static PlayerHealth instance;
+    
     [SerializeField] int maxHealth, currentHealth;
     [SerializeField] bool invincible;
     [SerializeField] float invincibilityDuration;
 
     private void Awake()
     {
-        instance = this;
+        
         currentHealth = maxHealth; 
     }
 

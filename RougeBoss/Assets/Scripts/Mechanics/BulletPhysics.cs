@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class BulletPhysics : MonoBehaviour
 {
-    [Header("Movement")]
-    public float speed = 20f;
-
+    Rigidbody2D body;
+    [SerializeField] int damage = 1;
+    public float speed = 10;
     private void Awake()
     {
+        body = GetComponent<Rigidbody2D>();
         StartCoroutine(DestroyBullet());
     }
 
@@ -17,14 +18,24 @@ public class BulletPhysics : MonoBehaviour
         yield return new WaitForSeconds(3f);
         Destroy(gameObject);
     }
-        
-    void Update()
+
+    private void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        body.velocity = transform.right * speed;
     }
+
+
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision)
+        {
+            collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+        }
+        
         Destroy(gameObject);
     }
+
+    
 }
