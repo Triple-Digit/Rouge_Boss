@@ -31,10 +31,7 @@ public class Weapon : MonoBehaviour
     [Tooltip("Increase the size by number of guns you want to add")]
     [SerializeField] WeaponType[] guns;
     
-    private void Start()
-    {
-        
-    }
+    
 
     private void Update()
     {
@@ -90,6 +87,7 @@ public class Weapon : MonoBehaviour
 
         GameObject bullet = Instantiate(guns[activeGun].bulletPrefab, shootingPoint.position, shootingPoint.rotation);
         bullet.GetComponent<BulletPhysics>().speed = guns[activeGun].bulletSpeed;
+        bullet.GetComponent<BulletPhysics>().damage = guns[activeGun].damage;
     }
 
 
@@ -103,7 +101,7 @@ public class WeaponType
     public string nameOfGun;
     //public Sprite gunSprite;
     public GameObject bulletPrefab;
-    public float bulletSpeed, fireRate;
+    public float bulletSpeed, fireRate, damage;
     public int maxAmmo, burstAmount;
     public float spreadAngle;
 }
