@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] bool isPlayer;
+    [SerializeField] bool isPlayer = false;
     [SerializeField] float maxBossHealth, currentBossHealth;
     [SerializeField] int maxPlayerHealth, currentPlayerHealth;
     [SerializeField] bool invincible;
     [SerializeField] float invincibilityDuration;
-    [SerializeField] int dropFactor;
+    [SerializeField] int dropFactor=1;
 
 
     private void Awake()
@@ -27,12 +27,16 @@ public class Health : MonoBehaviour
                 
     }
 
-    public void TakeDamage(int damageAmount)
+    public void TakeDamage(float damageAmount)
     {
         if(!isPlayer)
         {
             currentBossHealth = currentBossHealth - damageAmount;
             UIManager.instance.SetBossHealth(currentBossHealth);
+            if(currentBossHealth < 5)
+            {
+                GetComponent<BossController>().halfHealth = true;
+            }
             if (currentBossHealth <= 0)
             {
                 Dead();
@@ -78,9 +82,21 @@ public class Health : MonoBehaviour
 
     public void Dead()
     {
-        if(!isPlayer)
+        if(isPlayer)
         {
+            GameManager.instance.LevelFail();
+        }
+        else
+        {
+            GameManager.instance.LevelComplete();
+        }
+    }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy" && isPlayer)
+        {
+            TakeDamage(1f);
         }
     }
 }

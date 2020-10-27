@@ -13,7 +13,8 @@ public class BossController : MonoBehaviour
     float actionCounter, shotCounter;
     Vector2 moveDirection;
     int waypointIndex;
-    bool halfHealth, goingbackwardsthroughWaypoints;
+    public bool halfHealth; 
+    bool goingbackwardsthroughWaypoints;
     Rigidbody2D body;
     
 
@@ -65,35 +66,38 @@ public class BossController : MonoBehaviour
 
     void Movement()
     {
-        moveDirection = Vector2.zero;
-        if(actions[currentAction].shouldChase)
-        {            
-            moveDirection = PlayerController.instance.transform.position - transform.position;
-            moveDirection.Normalize();
-        }
-        if (actions[currentAction].moveToPoint)
-        {            
-            moveDirection = actions[currentAction].pointsToMoveTo[waypointIndex].position - transform.position;
-            if (Vector2.Distance(transform.position, actions[currentAction].pointsToMoveTo[waypointIndex].position) < 0.1f)
+        if (actions[currentAction].shouldMove)
+        {
+            moveDirection = Vector2.zero;
+            if (actions[currentAction].shouldChase)
             {
-                if (waypointIndex < actions[currentAction].pointsToMoveTo.Length - 1 && !goingbackwardsthroughWaypoints)
+                moveDirection = PlayerController.instance.transform.position - transform.position;
+                moveDirection.Normalize();
+            }
+            if (actions[currentAction].moveToPoint)
+            {
+                moveDirection = actions[currentAction].pointsToMoveTo[waypointIndex].position - transform.position;
+                if (Vector2.Distance(transform.position, actions[currentAction].pointsToMoveTo[waypointIndex].position) < 0.1f)
                 {
-                    waypointIndex++;
-                }
-                else
-                {
-                    waypointIndex--;
-                    goingbackwardsthroughWaypoints = true;
-
-                    if (waypointIndex <= 0)
+                    if (waypointIndex < actions[currentAction].pointsToMoveTo.Length - 1 && !goingbackwardsthroughWaypoints)
                     {
-                        goingbackwardsthroughWaypoints = false;
+                        waypointIndex++;
+                    }
+                    else
+                    {
+                        waypointIndex--;
+                        goingbackwardsthroughWaypoints = true;
+
+                        if (waypointIndex <= 0)
+                        {
+                            goingbackwardsthroughWaypoints = false;
+                        }
                     }
                 }
             }
+            body.velocity = moveDirection * actions[currentAction].moveSpeed;
         }
         else return;
-        body.velocity = moveDirection * actions[currentAction].moveSpeed;
     }
 
     void Shoot()
@@ -105,17 +109,14 @@ public class BossController : MonoBehaviour
             {
                 actions[currentAction].shootingPointHolder.Rotate(0, 0, actions[currentAction].rotationSpeed * 100 * Time.deltaTime);
             }
-            if(actions[currentAction].aimAtPlayer)
-            {
-                actions[currentAction].shootingPointHolder.LookAt(PlayerController.instance.transform);
-            }
+            
 
             shotCounter -= Time.deltaTime;
             if (shotCounter <= 0)
             {
                 shotCounter = actions[currentAction].fireRate;
                 foreach (Transform transform in actions[currentAction].shootingPoints)
-                {
+                {                    
                     GameObject bullet = Instantiate(actions[currentAction].bulletPrefab, transform.position, transform.rotation);
                     bullet.GetComponent<BulletPhysics>().speed = actions[currentAction].bulletSpeed;
                 }
@@ -133,6 +134,8 @@ public class BossAction
 
     [Tooltip("Set health action to true if you want the action to only occur when the bosses health is less than or equal to half its max health")]
     public bool halfHealthAction;
+    [Tooltip("If true, set either 'move to point' or 'should chase' to true")]
+    public bool shouldMove;
     [Tooltip("If true, please create empty game objects, place them at points with in the arena, drag and drop the points transforms to the array 'Points to move to' and set 'Should chase' to false")]
     public bool moveToPoint;
     [Tooltip("If true, set 'move to point' to false")]

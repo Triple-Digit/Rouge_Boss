@@ -5,8 +5,10 @@ using UnityEngine;
 public class BulletPhysics : MonoBehaviour
 {
     Rigidbody2D body;
-    [SerializeField] int damage = 1;
+    [SerializeField] float damage = 1;
     public float speed = 10;
+
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -29,7 +31,9 @@ public class BulletPhysics : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision)
+        
+
+        if(collision.gameObject.tag == ("Player") || collision.gameObject.tag == ("Enemy"))
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(damage);
         }

@@ -274,10 +274,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  maxHealth: 3
-  currentHealth: 0
+  maxBossHealth: 0
+  currentBossHealth: 0
+  maxPlayerHealth: 3
+  currentPlayerHealth: 0
   invincible: 0
-  invincibilityDuration: 2
+  invincibilityDuration: 1
+  dropFactor: 0
 --- !u!1 &1695382999066098808
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,11 +328,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeGun: 0
   shootingPoint: {fileID: 1695382999205833230}
+  timeToShoot: 0
+  updateGunVaribles: 0
   guns:
   - nameOfGun: Basic Gun
     bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 1
-    fireRate: 2
+    bulletSpeed: 9
+    fireRate: 0.4
     maxAmmo: 50
     burstAmount: 1
     spreadAngle: 1
@@ -357,7 +362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695382999205833225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2998, y: 0, z: 0}
+  m_LocalPosition: {x: 0.444, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1695382999066098809}

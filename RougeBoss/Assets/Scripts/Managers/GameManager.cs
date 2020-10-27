@@ -51,8 +51,7 @@ public class GameManager : MonoBehaviour
     }
 
     void LoadBossAndArena(int difficulty)
-    {
-        Instantiate(arenas[Random.Range(0, arenas.Length - 1)]);
+    {             
         
         if(difficulty < 2)
         {
@@ -87,7 +86,7 @@ public class GameManager : MonoBehaviour
 
     public void LevelFail()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
 }

@@ -33,7 +33,7 @@ public class Weapon : MonoBehaviour
     
     private void Start()
     {
-        timeToShoot = guns[activeGun].fireRate;
+        
     }
 
     private void Update()
@@ -44,40 +44,39 @@ public class Weapon : MonoBehaviour
         }
         
         if (Input.GetButton("Fire1"))
-        {
-            
+        {            
             if(timeToShoot <= 0)
             {                
                 Shoot();
                 timeToShoot = guns[activeGun].fireRate;
             }            
         }
-
-        if (updateGunVaribles)
-        {
-            EquipGun(activeGun);
-            updateGunVaribles = false;
-        }
-
     }
+
+
+
+
 
     public void EquipGun(int weaponIndex)
     {
         weaponIndex = activeGun;
-        
 
+        #region bullet spray code attempt
+        /*
         bulletSpread = new List<Quaternion>(guns[activeGun].burstAmount);
         for(int i = 0; i < guns[activeGun].burstAmount; ++i)
         {
             bulletSpread.Add(Quaternion.Euler(Vector3.zero));
         }
+        */
+        #endregion
     }
-      
+
 
     void Shoot()
     {
-        
-        int i = 0;
+        #region bullet spray code attempt
+        /*int i = 0;
         foreach(Quaternion quaternion in bulletSpread)
         {
             bulletSpread[i] = Random.rotation;
@@ -86,12 +85,17 @@ public class Weapon : MonoBehaviour
             bullet.GetComponent<BulletPhysics>().speed = guns[activeGun].bulletSpeed;
             ++i;
         }
+        */
+        #endregion
 
-        
+        GameObject bullet = Instantiate(guns[activeGun].bulletPrefab, shootingPoint.position, shootingPoint.rotation);
+        bullet.GetComponent<BulletPhysics>().speed = guns[activeGun].bulletSpeed;
     }
 
-      
+
 }
+
+
 #region Weapon type basic variables
 [System.Serializable]
 public class WeaponType
