@@ -368,7 +368,7 @@ MonoBehaviour:
     rotationSpeed: 1
     bulletPrefab: {fileID: 3153867998577864112, guid: fe7337dec334a9e42bbd06ddde265240, type: 3}
     fireRate: 0.2
-    bulletSpeed: 1.5
+    bulletSpeed: 3
     shootingPointHolder: {fileID: 5076699900483590912}
     shootingPoints:
     - {fileID: 5076699899562675997}
@@ -390,7 +390,7 @@ MonoBehaviour:
     bulletPrefab: {fileID: 0}
     fireRate: 0
     bulletSpeed: 0
-    shootingPointHolder: {fileID: 0}
+    shootingPointHolder: {fileID: 5076699900483590912}
     shootingPoints: []
   - actionType: 'Shotgun Atack '
     actionLength: 1

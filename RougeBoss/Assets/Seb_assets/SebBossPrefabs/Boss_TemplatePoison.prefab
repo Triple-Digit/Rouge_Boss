@@ -277,25 +277,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - actionType: Chase
+  - actionType: Chase and Rotate
     actionLength: 2
     halfHealthAction: 0
     shouldMove: 1
     moveToPoint: 0
     shouldChase: 1
-    moveSpeed: 2
+    moveSpeed: 2.3
     pointsToMoveTo: []
     shouldShoot: 0
     aimAtPlayer: 0
-    rotate: 0
-    rotationSpeed: 0
-    bulletPrefab: {fileID: 0}
+    rotate: 1
+    rotationSpeed: 5
+    bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
     fireRate: 0
     bulletSpeed: 0
-    shootingPointHolder: {fileID: 0}
+    shootingPointHolder: {fileID: 9137342003827500465}
     shootingPoints: []
   - actionType: Shoot and Rotate
-    actionLength: 2
+    actionLength: 3
     halfHealthAction: 0
     shouldMove: 0
     moveToPoint: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
     shouldShoot: 1
     aimAtPlayer: 0
     rotate: 1
-    rotationSpeed: 5
+    rotationSpeed: -0.5
     bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
     fireRate: 1
     bulletSpeed: 10
@@ -315,35 +315,35 @@ MonoBehaviour:
     - {fileID: 9137342004573404214}
     - {fileID: 9137342004782375205}
     - {fileID: 9137342004435253710}
-  - actionType: Chase
-    actionLength: 0
+  - actionType: Chase and Rotate
+    actionLength: 2
     halfHealthAction: 0
     shouldMove: 1
     moveToPoint: 0
     shouldChase: 1
-    moveSpeed: 2
+    moveSpeed: 2.3
     pointsToMoveTo: []
     shouldShoot: 0
     aimAtPlayer: 0
-    rotate: 0
-    rotationSpeed: 0
+    rotate: 1
+    rotationSpeed: -5
     bulletPrefab: {fileID: 0}
     fireRate: 0
     bulletSpeed: 0
-    shootingPointHolder: {fileID: 0}
+    shootingPointHolder: {fileID: 9137342003827500465}
     shootingPoints: []
   - actionType: Shoot and Rotate
-    actionLength: 2
+    actionLength: 3
     halfHealthAction: 0
     shouldMove: 0
     moveToPoint: 0
     shouldChase: 0
     moveSpeed: 0
     pointsToMoveTo: []
-    shouldShoot: 0
+    shouldShoot: 1
     aimAtPlayer: 0
     rotate: 1
-    rotationSpeed: -5
+    rotationSpeed: 0.5
     bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
     fireRate: 1
     bulletSpeed: 10
@@ -466,11 +466,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.5
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.z
@@ -528,11 +528,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.z
@@ -714,11 +714,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.z
@@ -776,11 +776,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 1190359971007165913, guid: d16020ebd3138ce44a611670b4e3b539, type: 3}
       propertyPath: m_LocalPosition.z

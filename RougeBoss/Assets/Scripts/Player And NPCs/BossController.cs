@@ -66,9 +66,12 @@ public class BossController : MonoBehaviour
 
     void Movement()
     {
-        if (actions[currentAction].shouldMove)
+        if (actions[currentAction].shouldMove || actions[currentAction].rotate)
         {
+            actions[currentAction].shootingPointHolder.Rotate(0, 0, actions[currentAction].rotationSpeed * 100 * Time.deltaTime);
+
             moveDirection = Vector2.zero;
+
             if (actions[currentAction].shouldChase)
             {
                 moveDirection = PlayerController.instance.transform.position - transform.position;

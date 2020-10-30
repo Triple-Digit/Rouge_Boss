@@ -231,7 +231,7 @@ MonoBehaviour:
     - {fileID: 3349445370846274262}
     - {fileID: 3349445372195585989}
   - actionType: Move To player
-    actionLength: 3
+    actionLength: 1
     halfHealthAction: 0
     shouldMove: 1
     moveToPoint: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
     fireRate: 0
     bulletSpeed: 0
-    shootingPointHolder: {fileID: 0}
+    shootingPointHolder: {fileID: 3349445371307817809}
     shootingPoints: []
   - actionType: Shoot In Line and Rotate
     actionLength: 3
