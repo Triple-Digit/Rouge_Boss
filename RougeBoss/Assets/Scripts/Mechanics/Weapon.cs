@@ -59,13 +59,13 @@ public class Weapon : MonoBehaviour
         weaponIndex = activeGun;
 
         #region bullet spray code attempt
-        /*
+        
         bulletSpread = new List<Quaternion>(guns[activeGun].burstAmount);
-        for(int i = 0; i < guns[activeGun].burstAmount; ++i)
+        for(int i = 0; i < guns[activeGun].burstAmount; i++)
         {
             bulletSpread.Add(Quaternion.Euler(Vector3.zero));
         }
-        */
+        
         #endregion
     }
 
@@ -73,21 +73,20 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         #region bullet spray code attempt
-        /*int i = 0;
-        foreach(Quaternion quaternion in bulletSpread)
+
+        for(int i = 0; i < bulletSpread.Count; i++)
         {
             bulletSpread[i] = Random.rotation;
             GameObject bullet = Instantiate(guns[activeGun].bulletPrefab, shootingPoint.position, shootingPoint.rotation);
             bullet.transform.rotation = Quaternion.RotateTowards(bullet.transform.rotation, bulletSpread[i], guns[activeGun].spreadAngle);
             bullet.GetComponent<BulletPhysics>().speed = guns[activeGun].bulletSpeed;
-            ++i;
         }
-        */
+        
         #endregion
 
-        GameObject bullet = Instantiate(guns[activeGun].bulletPrefab, shootingPoint.position, shootingPoint.rotation);
-        bullet.GetComponent<BulletPhysics>().speed = guns[activeGun].bulletSpeed;
-        bullet.GetComponent<BulletPhysics>().damage = guns[activeGun].damage;
+        //GameObject bullet = Instantiate(guns[activeGun].bulletPrefab, shootingPoint.position, shootingPoint.rotation);
+        //bullet.GetComponent<BulletPhysics>().speed = guns[activeGun].bulletSpeed;
+        //bullet.GetComponent<BulletPhysics>().damage = guns[activeGun].damage;
     }
 
 
