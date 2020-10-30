@@ -5,9 +5,15 @@ using UnityEngine;
 public class BulletPhysics : MonoBehaviour
 {
     Rigidbody2D body;
+<<<<<<< HEAD
     public float damage = 1f;
     public float speed = 10f;
     public float bulletDuration = 3f;
+=======
+    public float damage = 1;
+    public float speed = 10;
+    public float bulletDuration = 6f;
+>>>>>>> Seb_Branch
 
 
     private void Awake()
