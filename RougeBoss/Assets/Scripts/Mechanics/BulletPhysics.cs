@@ -7,6 +7,7 @@ public class BulletPhysics : MonoBehaviour
     Rigidbody2D body;
     public float damage = 1;
     public float speed = 10;
+    public float bulletDuration = 6f;
 
 
     private void Awake()
@@ -17,7 +18,7 @@ public class BulletPhysics : MonoBehaviour
 
     IEnumerator DestroyBullet()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(bulletDuration);
         Destroy(gameObject);
     }
 
