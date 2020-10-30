@@ -33,7 +33,7 @@ public class Health : MonoBehaviour
         {
             currentBossHealth = currentBossHealth - damageAmount;
             UIManager.instance.SetBossHealth(currentBossHealth);
-            if(currentBossHealth < 5)
+            if(currentBossHealth < 25)
             {
                 GetComponent<BossController>().halfHealth = true;
             }

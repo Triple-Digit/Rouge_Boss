@@ -80,6 +80,7 @@ public class Weapon : MonoBehaviour
             GameObject bullet = Instantiate(guns[activeGun].bulletPrefab, shootingPoint.position, shootingPoint.rotation);
             bullet.transform.rotation = Quaternion.RotateTowards(bullet.transform.rotation, bulletSpread[i], guns[activeGun].spreadAngle);
             bullet.GetComponent<BulletPhysics>().speed = guns[activeGun].bulletSpeed;
+            bullet.GetComponent<BulletPhysics>().damage = guns[activeGun].damage;
         }
         
         #endregion
