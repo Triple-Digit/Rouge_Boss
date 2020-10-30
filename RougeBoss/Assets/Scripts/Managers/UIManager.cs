@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        //bosshealthBar.maxValue = bosshealth;
+        bosshealthBar.maxValue = bosshealth;
     }
     #endregion
 
