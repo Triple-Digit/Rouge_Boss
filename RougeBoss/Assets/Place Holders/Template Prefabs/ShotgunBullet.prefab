@@ -254,4 +254,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   speed: 20
-  bulletDuration: 0.5
+  bulletDuration: 1
