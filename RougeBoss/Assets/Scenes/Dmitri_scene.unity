@@ -261,5 +261,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1695382999066098814, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
+      propertyPath: guns.Array.data[0].fireRate
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695382999066098814, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
+      propertyPath: guns.Array.data[0].burstAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695382999066098814, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
+      propertyPath: guns.Array.data[0].spreadAngle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695382999066098814, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
+      propertyPath: guns.Array.data[1].burstAmount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695382999066098814, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
+      propertyPath: activeGun
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695382999066098814, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
+      propertyPath: guns.Array.data[1].spreadAngle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695382999066098814, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
+      propertyPath: guns.Array.data[3].burstAmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695382999066098814, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
+      propertyPath: guns.Array.data[3].spreadAngle
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
