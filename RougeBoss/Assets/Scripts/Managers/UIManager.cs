@@ -11,19 +11,22 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        bosshealthBar.maxValue = bosshealth;
     }
     #endregion
 
     #region Player and Boss Health Stats
-    [SerializeField] private int playerHealth, bosshealth;
+    [SerializeField] private int playerHealth;
+    [SerializeField] private float bosshealth;
     [SerializeField] private Slider bosshealthBar;
     [SerializeField] Image[] healthIcon;
     [SerializeField] Sprite fullHeart, emptyHeart;
-
-
+    
+    
     public void SetBossHealth(float healthValue)
     {
         bosshealthBar.value = healthValue;
+        bosshealth = healthValue;
     }
 
     public void SetPlayerHealth(int healthValue)
