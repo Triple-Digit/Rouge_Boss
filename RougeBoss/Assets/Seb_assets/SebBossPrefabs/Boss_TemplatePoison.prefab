@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 6249738790364999654}
   m_Layer: 0
   m_Name: Boss_TemplatePoison
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,7 +327,7 @@ MonoBehaviour:
     aimAtPlayer: 0
     rotate: 1
     rotationSpeed: -5
-    bulletPrefab: {fileID: 0}
+    bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
     fireRate: 0
     bulletSpeed: 0
     shootingPointHolder: {fileID: 9137342003827500465}

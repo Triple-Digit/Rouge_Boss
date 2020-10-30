@@ -10,10 +10,12 @@ public class Health : MonoBehaviour
     [SerializeField] bool invincible;
     [SerializeField] float invincibilityDuration;
     [SerializeField] int dropFactor=1;
+    private bool bossDead;
 
 
     private void Awake()
     {
+
         if(isPlayer)
         {
             currentPlayerHealth = maxPlayerHealth;
@@ -21,6 +23,7 @@ public class Health : MonoBehaviour
         }
         else
         {
+            bossDead = false;
             currentBossHealth = maxBossHealth;
             UIManager.instance.SetBossHealth(currentBossHealth);
         }
@@ -29,17 +32,23 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
-        if(!isPlayer)
+        if (!isPlayer)
         {
             currentBossHealth = currentBossHealth - damageAmount;
             UIManager.instance.SetBossHealth(currentBossHealth);
-            if(currentBossHealth < 25)
+            //if(currentBossHealth < 25)
+            //{
+            //    GetComponent<BossController>().halfHealth = true;
+            //}
+            if (currentBossHealth <= 0 && !bossDead)
             {
-                GetComponent<BossController>().halfHealth = true;
-            }
-            if (currentBossHealth <= 0)
-            {
-                Dead();
+
+                bossDead = true;
+
+                if (bossDead)
+                {
+                    Dead();
+                }
             }
         }
         else
@@ -86,9 +95,10 @@ public class Health : MonoBehaviour
         {
             GameManager.instance.LevelFail();
         }
-        else
+        else if(bossDead)
         {
-            GameManager.instance.LevelComplete();
+            Destroy(gameObject);
+            GameManager.instance.LevelComplete();         
         }
     }
 

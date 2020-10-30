@@ -15,7 +15,7 @@ public class Weapon : MonoBehaviour
     #endregion    
 
     [Tooltip("Choose a number from 0 to the total number of weapon types in the list below to set as the active weapon")]
-    public int activeGun;
+    private int activeGun;
 
     #region Active Gun Variables
     
@@ -56,7 +56,7 @@ public class Weapon : MonoBehaviour
 
     public void EquipGun(int weaponIndex)
     {
-        weaponIndex = activeGun;
+        activeGun = weaponIndex; ;
 
         #region bullet spray code attempt
         

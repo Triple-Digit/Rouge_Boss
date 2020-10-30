@@ -217,8 +217,20 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3560744645075814803, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560744645075814803, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3560744645480870511, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560744645480870511, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3560744645511974956, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
@@ -268,7 +280,23 @@ PrefabInstance:
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: easyBossPrefabs.Array.data[0]
       value: 
+      objectReference: {fileID: 3349445371787739001, guid: 4dffde42c8b7bd54d8a959140747784b, type: 3}
+    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
+      propertyPath: mediumBossPrefabs.Array.data[0]
+      value: 
       objectReference: {fileID: 5076699898797023016, guid: 44cfc8f5037079f4ebd21b5898624dac, type: 3}
+    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
+      propertyPath: hardBossPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 9137342005515379097, guid: 24c4d349f5cb7be45a5fa1e03550291b, type: 3}
+    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
+      propertyPath: difficultyFactor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
+      propertyPath: playerWeaponIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3560744645511974992, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: m_Name
       value: Game_Manager
