@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletPhysics : MonoBehaviour
 {
     Rigidbody2D body;
-    [SerializeField] float damage = 1;
+    public float damage = 1;
     public float speed = 10;
 
 
