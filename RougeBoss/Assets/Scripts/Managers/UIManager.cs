@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider bosshealthBar;
     [SerializeField] Image[] healthIcon;
     [SerializeField] Sprite fullHeart, emptyHeart;
+
     
     
     public void SetBossHealth(float healthValue)

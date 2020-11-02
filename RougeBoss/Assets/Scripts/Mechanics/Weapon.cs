@@ -15,11 +15,12 @@ public class Weapon : MonoBehaviour
     #endregion    
 
     [Tooltip("Choose a number from 0 to the total number of weapon types in the list below to set as the active weapon")]
-    private int activeGun;
+    public int activeGun;
 
     #region Active Gun Variables
     
     [SerializeField] Transform shootingPoint;
+    [SerializeField] SpriteRenderer sprite;
     List<Quaternion> bulletSpread;
     bool canShoot;
     public float timeToShoot;
@@ -29,7 +30,7 @@ public class Weapon : MonoBehaviour
     
     [Header("List of weapon types")]
     [Tooltip("Increase the size by number of guns you want to add")]
-    [SerializeField] WeaponType[] guns;
+    [SerializeField] Guns[] guns;
     
     
 
@@ -56,8 +57,10 @@ public class Weapon : MonoBehaviour
 
     public void EquipGun(int weaponIndex)
     {
-        activeGun = weaponIndex; ;
+        activeGun = weaponIndex;
 
+        sprite.sprite = guns[activeGun].sprite;
+  
         #region bullet spray code attempt
         
         bulletSpread = new List<Quaternion>(guns[activeGun].burstAmount);
@@ -99,6 +102,7 @@ public class Weapon : MonoBehaviour
 public class WeaponType
 {
     public string nameOfGun;
+    public Guns gunObject;
     //public Sprite gunSprite;
     public GameObject bulletPrefab;
     public float bulletSpeed, fireRate, damage;

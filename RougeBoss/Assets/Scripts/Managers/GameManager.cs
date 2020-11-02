@@ -24,11 +24,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] hardBossPrefabs;
     [SerializeField] GameObject[] arenas;
     [SerializeField] int difficultyFactor = 1;
-    public int playerWeaponIndex = 2;
+    public int playerWeaponIndex = 0;
 
     [Header("Managers")]
     [SerializeField] UIManager uIManager;
     [SerializeField] SoundManager soundManager;
+
 
     bool startingGame = true;
 
@@ -44,11 +45,8 @@ public class GameManager : MonoBehaviour
             startingGame = false;
         }
 
-        
-
-
-
     }
+
 
     void LoadBossAndArena(int difficulty)
     {             

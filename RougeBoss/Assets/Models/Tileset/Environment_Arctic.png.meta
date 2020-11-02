@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 5670f4f93a6f622438977444c8aaf641
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6279380602534019790
+    second: Environment_Arctic_0
+  - first:
+      213: -357119183646221673
+    second: Environment_Arctic_1
+  - first:
+      213: -358978578537268566
+    second: Environment_Arctic_2
+  - first:
+      213: 9086577467526020937
+    second: Environment_Arctic_3
+  - first:
+      213: -1436173136476614105
+    second: Environment_Arctic_4
+  - first:
+      213: 6282260948577330904
+    second: Environment_Arctic_5
+  - first:
+      213: -8685547089198074028
+    second: Environment_Arctic_6
+  - first:
+      213: -2332267196208076299
+    second: Environment_Arctic_7
+  - first:
+      213: 4604898430342554758
+    second: Environment_Arctic_8
+  - first:
+      213: 2166487707497408328
+    second: Environment_Arctic_9
+  - first:
+      213: -8529873341112767743
+    second: Environment_Arctic_10
+  - first:
+      213: -423185211688495337
+    second: Environment_Arctic_11
+  - first:
+      213: -4220437229802667080
+    second: Environment_Arctic_12
+  - first:
+      213: 9101632076441915809
+    second: Environment_Arctic_13
+  - first:
+      213: -421676282961812435
+    second: Environment_Arctic_14
+  - first:
+      213: -4917165000043704477
+    second: Environment_Arctic_15
+  - first:
+      213: -5029640426943733701
+    second: Environment_Arctic_16
+  - first:
+      213: 7175316890651318975
+    second: Environment_Arctic_17
+  - first:
+      213: 2980482810576045677
+    second: Environment_Arctic_18
+  - first:
+      213: 1210855423896181270
+    second: Environment_Arctic_19
+  - first:
+      213: 3186766066937475825
+    second: Environment_Arctic_20
+  - first:
+      213: 8297675361787816977
+    second: Environment_Arctic_21
+  - first:
+      213: 8893479456740103253
+    second: Environment_Arctic_22
+  - first:
+      213: 724456332139014812
+    second: Environment_Arctic_23
+  - first:
+      213: -3300087452488880896
+    second: Environment_Arctic_24
+  - first:
+      213: -6523626041016213215
+    second: Environment_Arctic_25
+  - first:
+      213: 366347306789741673
+    second: Environment_Arctic_26
+  - first:
+      213: -7159725595083031672
+    second: Environment_Arctic_27
+  - first:
+      213: 2377809252584158971
+    second: Environment_Arctic_28
+  - first:
+      213: -4818965627832061718
+    second: Environment_Arctic_29
+  - first:
+      213: -5238789266999227927
+    second: Environment_Arctic_30
+  - first:
+      213: 6061158565099603791
+    second: Environment_Arctic_31
+  - first:
+      213: -8796987226008196346
+    second: Environment_Arctic_32
+  - first:
+      213: -1969759197552658392
+    second: Environment_Arctic_33
+  - first:
+      213: 7411869499920802864
+    second: Environment_Arctic_34
+  - first:
+      213: 7401620733731105253
+    second: Environment_Arctic_35
+  - first:
+      213: 2437737639048644503
+    second: Environment_Arctic_36
+  - first:
+      213: -4808390505490974398
+    second: Environment_Arctic_37
+  - first:
+      213: -6360349115830744210
+    second: Environment_Arctic_38
+  - first:
+      213: -637446020471229522
+    second: Environment_Arctic_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Environment_Arctic_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 507
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2c48f6367d42750800000000000000
+      internalID: 6279380602534019790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 507
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a1a4c9ef14b0bf0800000000000000
+      internalID: -357119183646221673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 507
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaabf4082e6a40bf0800000000000000
+      internalID: -358978578537268566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_3
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 366
+        width: 225
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ff4ff50120a1e70800000000000000
+      internalID: 9086577467526020937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_4
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 657
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7225a5c3420b11ce0800000000000000
+      internalID: -1436173136476614105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_5
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 657
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6a2424c031f2750800000000000000
+      internalID: 6282260948577330904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_6
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 657
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457bb6cb0fcb67780800000000000000
+      internalID: -8685547089198074028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_7
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 657
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9a8b8875f12afd0800000000000000
+      internalID: -2332267196208076299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_8
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 657
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684625f79b2e7ef30800000000000000
+      internalID: 4604898430342554758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_9
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 657
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84722a76719e01e10800000000000000
+      internalID: 2166487707497408328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_10
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 572
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b26e3b36dcf9980800000000000000
+      internalID: -8529873341112767743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_11
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 572
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717db17ca4b802af0800000000000000
+      internalID: -423185211688495337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_12
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 572
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b347c843befd65c0800000000000000
+      internalID: -4220437229802667080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_13
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 572
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a11f98a62e7f4e70800000000000000
+      internalID: 9101632076441915809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_14
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 572
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24aadf97a7e52af0800000000000000
+      internalID: -421676282961812435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 347
+        width: 75
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f49661c78b2cbb0800000000000000
+      internalID: -4917165000043704477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_16
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 347
+        width: 75
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30231c0ea0233ab0800000000000000
+      internalID: -5029640426943733701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_17
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 347
+        width: 75
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbad12212b8d39360800000000000000
+      internalID: 7175316890651318975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_18
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 488
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d660b8f235dcc5920800000000000000
+      internalID: 2980482810576045677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_19
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 488
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61adfa7b792ddc010800000000000000
+      internalID: 1210855423896181270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_20
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 488
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2b31a8adaa93c20800000000000000
+      internalID: 3186766066937475825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_21
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 488
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cafd057c3472370800000000000000
+      internalID: 8297675361787816977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_22
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 488
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5545a3c327cfb6b70800000000000000
+      internalID: 8893479456740103253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_23
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 403
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9aad6c1239cd0a00800000000000000
+      internalID: 724456332139014812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_24
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 403
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d2da252fbb332d0800000000000000
+      internalID: -3300087452488880896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_25
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 403
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121adb9edac6775a0800000000000000
+      internalID: -6523626041016213215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_26
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 187
+        width: 75
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964af9d3fe6851500800000000000000
+      internalID: 366347306789741673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_27
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 187
+        width: 75
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bbdcf418b83ac90800000000000000
+      internalID: -7159725595083031672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_28
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 187
+        width: 75
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf67ae3caecaff020800000000000000
+      internalID: 2377809252584158971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_29
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 262
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0b0402b489f1db0800000000000000
+      internalID: -4818965627832061718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_30
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 262
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9c16ffae41c47b0800000000000000
+      internalID: -5238789266999227927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_31
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 262
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4704100a9f8d1450800000000000000
+      internalID: 6061158565099603791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_32
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 178
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60be124f9b2dae580800000000000000
+      internalID: -8796987226008196346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_33
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 178
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828b0d032720aa4e0800000000000000
+      internalID: -1969759197552658392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_34
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 178
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034e4585a004cd660800000000000000
+      internalID: 7411869499920802864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_35
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 93
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9653487d6d7b660800000000000000
+      internalID: 7401620733731105253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_36
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 93
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797081f877594d120800000000000000
+      internalID: 2437737639048644503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_37
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 56
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24979daaf4a254db0800000000000000
+      internalID: -4808390505490974398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_38
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 9
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b407f7d208bb7a0800000000000000
+      internalID: -6360349115830744210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Arctic_39
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 9
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea37352c8365727f0800000000000000
+      internalID: -637446020471229522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
