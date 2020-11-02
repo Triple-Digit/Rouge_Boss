@@ -333,37 +333,9 @@ MonoBehaviour:
   guns:
   - nameOfGun: Basic Gun
     bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 7
-    fireRate: 3
-    maxAmmo: 7
-    burstAmount: 1
-    spreadAngle: 1
-  - nameOfGun: Basic Smg
-    bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 10
-    fireRate: 1
-    maxAmmo: 10
-    burstAmount: 1
-    spreadAngle: 1
-  - nameOfGun: Assault rifle
-    bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 15
-    fireRate: 0.2
-    maxAmmo: 12
-    burstAmount: 1
-    spreadAngle: 1
-  - nameOfGun: Plasma Rifle
-    bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 2
-    fireRate: 0.5
-    maxAmmo: 7
-    burstAmount: 1
-    spreadAngle: 1
-  - nameOfGun: Basic Gun
-    bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 7
-    fireRate: 3
-    maxAmmo: 7
+    bulletSpeed: 9
+    fireRate: 0.4
+    maxAmmo: 50
     burstAmount: 1
     spreadAngle: 1
 --- !u!1 &1695382999205833225
