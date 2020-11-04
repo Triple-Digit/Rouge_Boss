@@ -25,7 +25,7 @@ public class Health : MonoBehaviour
         {
             bossDead = false;
             currentBossHealth = maxBossHealth;
-            UIManager.instance.SetBossHealth(currentBossHealth);
+            UIManager.instance.SetBossHealth(maxBossHealth);
         }
                 
     }
