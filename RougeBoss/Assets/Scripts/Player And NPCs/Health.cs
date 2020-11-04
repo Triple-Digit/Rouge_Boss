@@ -6,11 +6,14 @@ public class Health : MonoBehaviour
 {
     [SerializeField] bool isPlayer = false;
     [SerializeField] float maxBossHealth, currentBossHealth;
-    [SerializeField] int maxPlayerHealth, currentPlayerHealth;
-    [SerializeField] bool invincible;
+    [SerializeField] int maxPlayerHealth, currentPlayerHealth;    
     [SerializeField] float invincibilityDuration;
     [SerializeField] int dropFactor=1;
+
     private bool bossDead;
+
+
+    public bool invincible;
 
 
     private void Awake()
@@ -25,7 +28,7 @@ public class Health : MonoBehaviour
         {
             bossDead = false;
             currentBossHealth = maxBossHealth;
-            UIManager.instance.SetBossHealth(currentBossHealth);
+            UIManager.instance.SetBossHealth(maxBossHealth);
         }
                 
     }
