@@ -316,7 +316,7 @@ MonoBehaviour:
     shouldShoot: 0
     aimAtPlayer: 0
     rotate: 1
-    rotationSpeed: 5
+    rotationSpeed: 10
     bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
     fireRate: 0
     bulletSpeed: 0
