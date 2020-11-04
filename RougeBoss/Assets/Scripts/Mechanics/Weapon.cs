@@ -16,9 +16,9 @@ public class Weapon : MonoBehaviour
 
     [Tooltip("Choose a number from 0 to the total number of weapon types in the list below to set as the active weapon")]
 
+
     [SerializeField]
     private int activeGun;
-
 
     #region Active Gun Variables
     
