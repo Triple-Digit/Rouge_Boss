@@ -328,15 +328,15 @@ PrefabInstance:
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: easyBossPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 8208730511991214510, guid: 5ef6ca42ff7349b44b69386e24802783, type: 3}
+      objectReference: {fileID: 2985333303083217445, guid: 279de3f5befb0d74ebf6d6d0a0160dd9, type: 3}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: mediumBossPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 7794320164821977094, guid: fb0f7f6314602a34997683c4bff5b39e, type: 3}
+      objectReference: {fileID: 497444601600561721, guid: 3a37ee50d1dfc1f409430416800f9390, type: 3}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: hardBossPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 6915824799729617250, guid: 0c30ccaa933289d46926d3a5f263ab4c, type: 3}
+      objectReference: {fileID: 7967587287100973748, guid: cf9273ea197616d44aa7c4dd66c6e824, type: 3}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: difficultyFactor
       value: 1

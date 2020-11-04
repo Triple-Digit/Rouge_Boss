@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: 2260719435403824311
     second: Boss_Poison_3
+  - first:
+      213: -7829964305237921115
+    second: Boss_Poison_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +112,7 @@ TextureImporter:
         width: 315
         height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,7 +133,7 @@ TextureImporter:
         width: 315
         height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,7 +154,7 @@ TextureImporter:
         width: 315
         height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,7 +175,7 @@ TextureImporter:
         width: 315
         height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,6 +183,27 @@ TextureImporter:
       bones: []
       spriteID: 7bc01144950bf5f10800000000000000
       internalID: 2260719435403824311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Poison_4
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 880
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a23e4603f0665390800000000000000
+      internalID: -7829964305237921115
       vertices: []
       indices: 
       edges: []
