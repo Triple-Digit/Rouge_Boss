@@ -6,15 +6,26 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     #region Singleton
-    public static GameManager instance;
+
+    public static GameManager instance = null;
+    
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
+
         startingGame = true;
         uIManager = UIManager.instance;
+        HUD = this.gameObject.transform.GetChild(0).gameObject;
         LoadLevel();
-
+        
     }
+
     #endregion
 
     [Header("Level requirements")]
@@ -25,6 +36,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] arenas;
     [SerializeField] int difficultyFactor = 1;
     public int playerWeaponIndex = 0;
+    public int weaponUnlock = 0;
 
     [Header("Managers")]
     [SerializeField] UIManager uIManager;
@@ -32,10 +44,16 @@ public class GameManager : MonoBehaviour
 
 
     bool startingGame = true;
+    private GameObject HUD;
 
     
     void LoadLevel()
     {
+        if(!HUD.activeSelf)
+        {
+            HUD.SetActive(true);
+        }
+        
         LoadBossAndArena(difficultyFactor);
 
         if(startingGame)
@@ -79,12 +97,14 @@ public class GameManager : MonoBehaviour
     public void LevelComplete()
     {
         ++difficultyFactor;
+        ++weaponUnlock;
         LoadLevel();
     }
 
     public void LevelFail()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        HUD.SetActive(false);
+        SceneManager.LoadScene("Upgrade_scene");
     }
     
 }

@@ -76,7 +76,6 @@ public class BossController : MonoBehaviour
 
             if (actions[currentAction].shouldChase)
             {
-                animator.SetBool("isMoving", actions[currentAction].shouldChase);
                 moveDirection = PlayerController.instance.transform.position - transform.position;
                 moveDirection.Normalize();
             }

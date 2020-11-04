@@ -6,11 +6,17 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     #region Singleton
-    public static UIManager instance;
+    public static UIManager instance = null;
     
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
         bosshealthBar.maxValue = bosshealth;
     }
     #endregion

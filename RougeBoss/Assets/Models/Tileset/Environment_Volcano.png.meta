@@ -146,6 +146,9 @@ TextureImporter:
   - first:
       213: 3299132362481209756
     second: Environment_Volcano_46
+  - first:
+      213: 4137630097610660026
+    second: Environment_Volcano_47
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
