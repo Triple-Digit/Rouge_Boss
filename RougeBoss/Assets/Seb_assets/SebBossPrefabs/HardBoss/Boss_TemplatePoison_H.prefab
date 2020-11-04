@@ -599,7 +599,7 @@ MonoBehaviour:
     shootingPointHolder: {fileID: 7967587285359332924}
     shootingPoints: []
   - actionType: Shoot and Rotate
-    actionLength: 3
+    actionLength: 2.5
     halfHealthAction: 0
     shouldMove: 0
     moveToPoint: 0
@@ -637,7 +637,7 @@ MonoBehaviour:
     shootingPointHolder: {fileID: 7967587285359332924}
     shootingPoints: []
   - actionType: Shoot and Rotate
-    actionLength: 3
+    actionLength: 2.5
     halfHealthAction: 0
     shouldMove: 0
     moveToPoint: 0
