@@ -6,7 +6,7 @@ public class BulletPhysics : MonoBehaviour
 {
     Rigidbody2D body;
     public float damage = 1;
-    public float speed = 10;
+    public float speed = 0;
 
 
     private void Awake()

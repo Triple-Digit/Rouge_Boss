@@ -90,7 +90,24 @@ public class Weapon : MonoBehaviour
         bullet.GetComponent<BulletPhysics>().damage = guns[activeGun].damage;
     }
 
+    public void ShootGrenade(GameObject grenade, float speed)
+    {
+        Instantiate(grenade, shootingPoint.position, shootingPoint.rotation);
+        grenade.GetComponent<BulletPhysics>().speed = speed;
+    }
 
+    public void EMP()
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(shootingPoint.position, 20f);
+        foreach (var hitCollider in hitColliders)
+        {
+            if(hitCollider.gameObject.tag == "EnemyBullet")
+            {
+                Destroy(hitCollider.gameObject);
+            }
+        }
+        return;
+    }
 }
 
 
