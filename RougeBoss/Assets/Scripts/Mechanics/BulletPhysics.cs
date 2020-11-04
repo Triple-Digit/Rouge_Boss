@@ -6,9 +6,11 @@ public class BulletPhysics : MonoBehaviour
 {
     Rigidbody2D body;
 
+
     public float damage = 1f;
-    public float speed = 10f;
+    public float speed = 0f;
     public float bulletDuration = 3f;
+
 
 
 
