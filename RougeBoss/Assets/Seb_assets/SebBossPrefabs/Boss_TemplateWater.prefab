@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3349445370707601198}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shooting_point (3)
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3349445370846274262}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shooting_point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3349445370920103756}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shooting_point
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3349445371307817809}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shooting_point_holder
   m_TagString: Untagged
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -134,10 +134,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3349445371787739005}
   - component: {fileID: 3349445371787739004}
-  - component: {fileID: 3349445371787739007}
   - component: {fileID: 3349445371787739006}
   - component: {fileID: 436368284765090054}
-  m_Layer: 0
+  - component: {fileID: 3085312398682795068}
+  m_Layer: 9
   m_Name: Boss_TemplateWater
   m_TagString: Enemy
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -181,22 +181,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &3349445371787739007
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3349445371787739001}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.44
 --- !u!114 &3349445371787739006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +272,22 @@ MonoBehaviour:
   invincible: 0
   invincibilityDuration: 0
   dropFactor: 0
+--- !u!70 &3085312398682795068
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3349445371787739001}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.16948736, y: -0.3543675}
+  m_Size: {x: 1.8358815, y: 3.86169}
+  m_Direction: 0
 --- !u!1 &3349445372106144040
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +298,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3349445372106144041}
   - component: {fileID: 3349445372106144046}
-  m_Layer: 0
+  - component: {fileID: 6145163444278639188}
+  m_Layer: 9
   m_Name: Boss_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +360,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2e4911bd5e031a342be5c92a632fef6a, type: 3}
+  m_Sprite: {fileID: 4897561795708015860, guid: 77972c6e4cf8a0b488c785e1b1b0a4f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -370,6 +371,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &6145163444278639188
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3349445372106144040}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3349445372195585988
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3349445372195585989}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shooting_point (2)
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}

@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 161edb12bb3810d40a2fc25a47e27894
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4999626314829700178
+    second: Boss_Electric_0
+  - first:
+      213: -6733138808168825587
+    second: Boss_Electric_1
+  - first:
+      213: 4731488797940774122
+    second: Boss_Electric_2
+  - first:
+      213: -1180513727637125838
+    second: Boss_Electric_3
+  - first:
+      213: 9163546092923665999
+    second: Boss_Electric_4
+  - first:
+      213: -5380416754081662523
+    second: Boss_Electric_5
+  - first:
+      213: 2439733284730701249
+    second: Boss_Electric_6
+  - first:
+      213: 8594598957392525860
+    second: Boss_Electric_7
+  - first:
+      213: 1029031895987886043
+    second: Boss_Electric_8
+  - first:
+      213: 868922174518609761
+    second: Boss_Electric_9
+  - first:
+      213: -2909976298412183149
+    second: Boss_Electric_10
+  - first:
+      213: 8446919840151091855
+    second: Boss_Electric_11
+  - first:
+      213: 3463203208852022971
+    second: Boss_Electric_12
+  - first:
+      213: 8619052207968193644
+    second: Boss_Electric_13
+  - first:
+      213: -8141054086610734907
+    second: Boss_Electric_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +77,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,7 +86,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +118,189 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Boss_Electric_0
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 3464
+        width: 244
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c9e19e4ad326540800000000000000
+      internalID: 4999626314829700178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Electric_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2999
+        width: 244
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d33bb7de51f82a0800000000000000
+      internalID: -6733138808168825587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Electric_2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2534
+        width: 244
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4fff34eff99a140800000000000000
+      internalID: 4731488797940774122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Electric_4
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2039
+        width: 244
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e32a7fe947b2f70800000000000000
+      internalID: 9163546092923665999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Electric_7
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1544
+        width: 244
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42af2523736264770800000000000000
+      internalID: 8594598957392525860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Electric_9
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1049
+        width: 244
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16744ad2d180f0c00800000000000000
+      internalID: 868922174518609761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Electric_12
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 89
+        width: 244
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb62e9838f4cf0030800000000000000
+      internalID: 3463203208852022971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Electric_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 555
+        width: 244
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23587b3f409fd9fe0800000000000000
+      internalID: -1180513727637125838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

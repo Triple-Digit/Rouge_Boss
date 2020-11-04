@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Basic Smg
   m_EditorClassIdentifier: 
   nameOfGun: Basic Smg
-  gunObject: {fileID: 0}
   bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
   bulletSpeed: 10
   fireRate: 0.8
@@ -22,4 +21,4 @@ MonoBehaviour:
   burstAmount: 3
   spreadAngle: 3
   weaponID: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: -6551439491527740289, guid: 76b836b086f90ec4f96f7ecc7fd4aaa7, type: 3}

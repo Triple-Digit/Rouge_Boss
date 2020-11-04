@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float moveSpeed;    
     [SerializeField] Transform aimDirection;
+    private Animator animator;
+    private bool isWalking;
      
     Rigidbody2D body;
     Camera gameCamera;
@@ -15,6 +17,7 @@ public class PlayerController : MonoBehaviour
     
     private void Awake()
     {
+        animator = transform.Find("Player_Sprite").GetComponent<Animator>();
         instance = this;
         gameCamera = Camera.main;
         body = GetComponent<Rigidbody2D>();
@@ -23,8 +26,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Move();
+        isWalking = (Mathf.Abs(moveInput.x) + Mathf.Abs(moveInput.y)) > 0;
+        animator.SetBool("IsWalking", isWalking);
         Aim();
-        
+        ManageAnimations();
     }
     
     void Move()
@@ -32,7 +37,11 @@ public class PlayerController : MonoBehaviour
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput.Normalize();
-        body.velocity = moveInput * moveSpeed;
+        
+        if (isWalking)
+        {
+            body.velocity = moveInput * moveSpeed;
+        }
     }
 
     void Aim()
@@ -54,6 +63,16 @@ public class PlayerController : MonoBehaviour
         Vector2 offset = new Vector2(mousePosition.x - screenPoint.x, mousePosition.y - screenPoint.y);
         float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
         aimDirection.rotation = Quaternion.Euler(0, 0, angle);
+    }
+
+    void ManageAnimations()
+    {
+        if (isWalking)
+        {
+            animator.SetFloat("Horizontal", moveInput.x);
+            animator.SetFloat("Vertical", moveInput.y);
+            animator.SetFloat("Magnitude", moveInput.sqrMagnitude);
+        }
     }
 
     
