@@ -136,9 +136,14 @@ GameObject:
   - component: {fileID: 3349445371787739004}
   - component: {fileID: 3349445371787739006}
   - component: {fileID: 436368284765090054}
+<<<<<<< Updated upstream:RougeBoss/Assets/Seb_assets/SebBossPrefabs/Boss_TemplateWater.prefab
   - component: {fileID: 3085312398682795068}
   m_Layer: 9
   m_Name: Boss_TemplateWater
+=======
+  m_Layer: 0
+  m_Name: Boss_TemplateWater_M
+>>>>>>> Stashed changes:RougeBoss/Assets/Seb_assets/SebBossPrefabs/MediumBoss/Boss_TemplateWater_M.prefab
   m_TagString: Enemy
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
