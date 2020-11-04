@@ -326,49 +326,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-      propertyPath: easyBossPrefabs.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-      propertyPath: mediumBossPrefabs.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: easyBossPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 6881707653257589769, guid: 401b6604edce9bd4287a096a7543c41c, type: 3}
+      objectReference: {fileID: 3349445371787739001, guid: 4dffde42c8b7bd54d8a959140747784b, type: 3}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: mediumBossPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 6521665459396391970, guid: 46684f20aaef807498ab86b4d1a5817f, type: 3}
+      objectReference: {fileID: 5076699898797023016, guid: 44cfc8f5037079f4ebd21b5898624dac, type: 3}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: hardBossPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 5076699898797023016, guid: 44cfc8f5037079f4ebd21b5898624dac, type: 3}
+      objectReference: {fileID: 9137342005515379097, guid: 24c4d349f5cb7be45a5fa1e03550291b, type: 3}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: difficultyFactor
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: playerWeaponIndex
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-      propertyPath: easyBossPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 3349445371787739001, guid: 4dffde42c8b7bd54d8a959140747784b, type: 3}
-    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-      propertyPath: easyBossPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 3349445371787739001, guid: 4dffde42c8b7bd54d8a959140747784b, type: 3}
-    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-      propertyPath: easyBossPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 3349445371787739001, guid: 4dffde42c8b7bd54d8a959140747784b, type: 3}
-    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-      propertyPath: mediumBossPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 6309905522086408614, guid: 3a37ee50d1dfc1f409430416800f9390, type: 3}
     - target: {fileID: 3560744645511974958, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: bosshealth
       value: 50
