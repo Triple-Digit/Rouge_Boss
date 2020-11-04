@@ -132,7 +132,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 4999626314829700178, guid: 161edb12bb3810d40a2fc25a47e27894, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -244,7 +244,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 4999626314829700178, guid: 161edb12bb3810d40a2fc25a47e27894, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
     rotationSpeed: 0.5
     bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
     fireRate: 0.25
-    bulletSpeed: 7
+    bulletSpeed: 6.5
     shootingPointHolder: {fileID: 4626579030106266314}
     shootingPoints:
     - {fileID: 4626579028634183326}
@@ -469,7 +469,7 @@ MonoBehaviour:
     rotationSpeed: -0.5
     bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
     fireRate: 0.25
-    bulletSpeed: 7
+    bulletSpeed: 6.5
     shootingPointHolder: {fileID: 4626579030106266314}
     shootingPoints:
     - {fileID: 4626579028634183326}
