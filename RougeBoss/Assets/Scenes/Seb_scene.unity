@@ -328,22 +328,22 @@ PrefabInstance:
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: easyBossPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 3349445371787739001, guid: 4dffde42c8b7bd54d8a959140747784b, type: 3}
+      objectReference: {fileID: 7464041462292573403, guid: a9f6869eb1678c7409937e255b59f71d, type: 3}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: mediumBossPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 5076699898797023016, guid: 44cfc8f5037079f4ebd21b5898624dac, type: 3}
+      objectReference: {fileID: 8781062552623358219, guid: 503be4999c0401047afc2d4cac948392, type: 3}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: hardBossPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 9137342005515379097, guid: 24c4d349f5cb7be45a5fa1e03550291b, type: 3}
+      objectReference: {fileID: 5494194323574492481, guid: df978d78e34f3db4d9c5f4ddf2a26db7, type: 3}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: difficultyFactor
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: playerWeaponIndex
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3560744645511974958, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: bosshealth
