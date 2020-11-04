@@ -376,14 +376,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1695382998867409582, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
   easyBossPrefabs:
-  - {fileID: 5076699898797023016, guid: 44cfc8f5037079f4ebd21b5898624dac, type: 3}
+  - {fileID: 5361500956341999076, guid: 7f086b298363a2b44aaf45c2b8f8f144, type: 3}
+  - {fileID: 29856550732170159, guid: 3c82e34deea27f747b9f1f72abf9f8cf, type: 3}
+  - {fileID: 2985333303083217445, guid: 279de3f5befb0d74ebf6d6d0a0160dd9, type: 3}
+  - {fileID: 7464041462292573403, guid: a9f6869eb1678c7409937e255b59f71d, type: 3}
+  - {fileID: 8208730511991214510, guid: 5ef6ca42ff7349b44b69386e24802783, type: 3}
   mediumBossPrefabs:
-  - {fileID: 9137342005515379097, guid: 24c4d349f5cb7be45a5fa1e03550291b, type: 3}
+  - {fileID: 6249754025077395650, guid: d5b286620f33add4f966efc15db32604, type: 3}
+  - {fileID: 1466714126169249388, guid: 46684f20aaef807498ab86b4d1a5817f, type: 3}
+  - {fileID: 497444601600561721, guid: 3a37ee50d1dfc1f409430416800f9390, type: 3}
+  - {fileID: 7794320164821977094, guid: fb0f7f6314602a34997683c4bff5b39e, type: 3}
+  - {fileID: 8781062552623358219, guid: 503be4999c0401047afc2d4cac948392, type: 3}
   hardBossPrefabs:
-  - {fileID: 3349445371787739001, guid: 4dffde42c8b7bd54d8a959140747784b, type: 3}
+  - {fileID: 4626579029155890374, guid: 1bd7729f31f61e3438fccbcfa2bd9c11, type: 3}
+  - {fileID: 4492738762217916061, guid: 9e927ef1a6492674d89daaadc2283605, type: 3}
+  - {fileID: 7967587287100973748, guid: cf9273ea197616d44aa7c4dd66c6e824, type: 3}
+  - {fileID: 6915824799729617250, guid: 0c30ccaa933289d46926d3a5f263ab4c, type: 3}
+  - {fileID: 5494194323574492481, guid: df978d78e34f3db4d9c5f4ddf2a26db7, type: 3}
   arenas: []
   difficultyFactor: 1
-  playerWeaponIndex: 4
+  playerWeaponIndex: 3
+  weaponUnlock: 0
   uIManager: {fileID: 3560744645511974958}
   soundManager: {fileID: 3560744645511974959}
 --- !u!114 &3560744645511974958

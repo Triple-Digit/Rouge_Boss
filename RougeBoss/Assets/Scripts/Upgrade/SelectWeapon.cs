@@ -16,6 +16,8 @@ public class SelectWeapon : MonoBehaviour
         GameManager.instance.playerWeaponIndex = guns.weaponID;
     }
 
+    
+
     private void Start()
     {
         int unlockCounter = GameManager.instance.weaponUnlock;

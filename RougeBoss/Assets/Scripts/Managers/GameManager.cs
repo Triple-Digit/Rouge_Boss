@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] mediumBossPrefabs;
     [SerializeField] GameObject[] hardBossPrefabs;
     [SerializeField] GameObject[] arenas;
-    [SerializeField] int difficultyFactor = 1;
+    public int difficultyFactor = 0;
     public int playerWeaponIndex = 0;
     public int weaponUnlock = 0;
 
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     private GameObject HUD;
 
     
-    void LoadLevel()
+    public void LoadLevel()
     {
         if(!HUD.activeSelf)
         {
@@ -69,22 +69,22 @@ public class GameManager : MonoBehaviour
     void LoadBossAndArena(int difficulty)
     {             
         
-        if(difficulty == 1 )
+        if(difficulty <= 3 )
         {
-            //int randomBossInt = Random.Range(0, easyBossPrefabs.Length - 1);
-            Instantiate(easyBossPrefabs[0]);
+            int randomBossInt = Random.Range(0, easyBossPrefabs.Length - 1);
+            Instantiate(easyBossPrefabs[randomBossInt]);
         }
 
-        if (difficulty == 2)
+        if (difficulty > 3 && difficulty < 6)
         {
-            //int randomBossInt = Random.Range(0, mediumBossPrefabs.Length - 1);
-            Instantiate(mediumBossPrefabs[0]);
+            int randomBossInt = Random.Range(0, mediumBossPrefabs.Length - 1);
+            Instantiate(mediumBossPrefabs[randomBossInt]);
         }
 
-        if (difficulty == 3)
+        if (difficulty >= 6)
         {
-            //int randomBossInt = Random.Range(0, hardBossPrefabs.Length - 1);
-            Instantiate(hardBossPrefabs[0]);
+            int randomBossInt = Random.Range(0, hardBossPrefabs.Length - 1);
+            Instantiate(hardBossPrefabs[randomBossInt]);
         }
 
     }
