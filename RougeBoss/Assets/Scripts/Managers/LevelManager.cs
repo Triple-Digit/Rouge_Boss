@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
         if(collision.tag == "Player")
         {
             GameManager.instance.LevelComplete();
+            Destroy(gameObject);
         }
     }
 }
