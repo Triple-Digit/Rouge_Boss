@@ -57,9 +57,7 @@ public class PlayerController : MonoBehaviour
         {
             body.velocity = moveInput * moveSpeed;
         }
-
-        body.velocity = moveInput * activeMoveSpeed;
-
+       // body.velocity = moveInput * moveSpeed;
     }
 
 
