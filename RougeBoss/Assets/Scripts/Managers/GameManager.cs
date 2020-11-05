@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public int difficultyFactor = 1;
     public int playerWeaponIndex = 0;
     public int weaponUnlock = 0;
+>>>>>>> Stashed changes
 
     [Header("Managers")]
     [SerializeField] UIManager uIManager;
