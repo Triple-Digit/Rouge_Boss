@@ -7,12 +7,12 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
 
     float activeMoveSpeed, dashCounter;
-    [SerializeField] float moveSpeed;    
+    [SerializeField] float moveSpeed;
     [SerializeField] Transform aimDirection;
 
     private Animator animator;
     private bool isWalking;
-     
+
 
     [SerializeField] float dashSpeed, dashLength, grenadeSpeed;
     [SerializeField] bool hasItem;
@@ -45,14 +45,14 @@ public class PlayerController : MonoBehaviour
         UseItem();
 
     }
-    
+
     void Move()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput.Normalize();
 
-        
+
         if (isWalking)
         {
             body.velocity = moveInput * moveSpeed;
@@ -67,9 +67,9 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 mousePosition = Input.mousePosition;
         Vector3 screenPoint = gameCamera.WorldToScreenPoint(transform.localPosition);
-        
-        if(mousePosition.x < screenPoint.x) 
-        { 
+
+        if (mousePosition.x < screenPoint.x)
+        {
             transform.localScale = new Vector3(-1f, 1f, 1f);
             aimDirection.localScale = new Vector3(-1f, -1f, 1f);
         }
@@ -93,46 +93,47 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Magnitude", moveInput.sqrMagnitude);
         }
 
-    void UseItem()
-    {
-        if(hasItem)
+        void UseItem()
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (hasItem)
             {
-                activeMoveSpeed = dashSpeed;
-                dashCounter = dashLength;
-                playerHealth.invincible = true;
-                hasItem = false;
-            }
-            
-            if(Input.GetKeyDown(KeyCode.Q))
-            {
-                Weapon.instance.ShootGrenade(grenade, grenadeSpeed);
-                hasItem = false;
+                if (Input.GetKeyDown(KeyCode.LeftShift))
+                {
+                    activeMoveSpeed = dashSpeed;
+                    dashCounter = dashLength;
+                    playerHealth.invincible = true;
+                    hasItem = false;
+                }
+
+                if (Input.GetKeyDown(KeyCode.Q))
+                {
+                    Weapon.instance.ShootGrenade(grenade, grenadeSpeed);
+                    hasItem = false;
+                }
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    Weapon.instance.EMP();
+                    hasItem = false;
+                }
+
+
             }
 
-            if(Input.GetKeyDown(KeyCode.E))
+            if (dashCounter > 0)
             {
-                Weapon.instance.EMP();
-                hasItem = false;
+                dashCounter -= Time.deltaTime;
+                if (dashCounter <= 0)
+                {
+                    activeMoveSpeed = moveSpeed;
+                    playerHealth.invincible = false;
+                }
             }
+
 
 
         }
-
-        if(dashCounter > 0)
-        {
-            dashCounter -= Time.deltaTime;
-            if(dashCounter<=0)
-            {
-                activeMoveSpeed = moveSpeed;
-                playerHealth.invincible = false;
-            }
-        }
-
-
-
     }
-
-    
 }
+
+
