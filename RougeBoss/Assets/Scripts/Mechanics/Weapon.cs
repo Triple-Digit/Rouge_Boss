@@ -16,7 +16,11 @@ public class Weapon : MonoBehaviour
     [Tooltip("Choose a number from 0 to the total number of weapon types in the list below to set as the active weapon")]
 
 
+
     public int activeGun;
+
+    public AudioSource audiosource;
+    public AudioClip gunShot;
 
     #region Active Gun Variables
     
@@ -32,9 +36,12 @@ public class Weapon : MonoBehaviour
     [Header("List of weapon types")]
     [Tooltip("Increase the size by number of guns you want to add")]
     [SerializeField] Guns[] guns;
-    
-    
 
+
+    private void Start()
+    {
+        audiosource = GetComponent<AudioSource>();
+    }
     private void Update()
     {
         if(timeToShoot > 0)
@@ -45,10 +52,12 @@ public class Weapon : MonoBehaviour
         if (Input.GetButton("Fire1"))
         {            
             if(timeToShoot <= 0)
-            {                
+            {
+                audiosource.PlayOneShot(gunShot, 0.2f);
                 Shoot();
                 timeToShoot = guns[activeGun].fireRate;
-            }            
+            } 
+            
         }
     }
 
