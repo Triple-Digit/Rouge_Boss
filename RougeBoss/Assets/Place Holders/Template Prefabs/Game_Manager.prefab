@@ -422,6 +422,8 @@ MonoBehaviour:
   - {fileID: 3560744646558083069}
   fullHeart: {fileID: 8109154662235370213, guid: 0b36e3628093f554fa61cc5014f562c3, type: 3}
   emptyHeart: {fileID: 2139837793675082937, guid: 0b36e3628093f554fa61cc5014f562c3, type: 3}
+  Grenade: {fileID: 5228437761383443163}
+  PauzeMenuObject: {fileID: 0}
 --- !u!114 &3560744645511974959
 MonoBehaviour:
   m_ObjectHideFlags: 0
