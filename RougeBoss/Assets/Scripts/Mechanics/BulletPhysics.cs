@@ -26,13 +26,8 @@ public class BulletPhysics : MonoBehaviour
         body.velocity = transform.right * speed;
     }
 
-
-    
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-
         if(collision.gameObject.tag == ("Player") || collision.gameObject.tag == ("Enemy"))
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(damage);
