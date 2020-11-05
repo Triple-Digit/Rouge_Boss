@@ -257,7 +257,7 @@ MonoBehaviour:
   aimDirection: {fileID: 1695382999066098809}
   dashSpeed: 8
   dashLength: 0.5
-  grenadeSpeed: 0.5
+  grenadeSpeed: 5
   hasItem: 0
   grenade: {fileID: 7114964534169785382, guid: c1f0e83be2c61274fb69aa0186495dac, type: 3}
   playerHealth: {fileID: 1186878662533427126}

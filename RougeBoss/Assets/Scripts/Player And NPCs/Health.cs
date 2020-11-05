@@ -15,15 +15,18 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
-        if(isPlayer)
+        
+
+        if (isPlayer)
         {
             currentPlayerHealth = maxPlayerHealth;
-            UIManager.instance.SetPlayerHealth(currentPlayerHealth);
+            GameManager.Instance.m_UIManager.SetPlayerHealth(currentPlayerHealth);
         }
         else
         {
+            GameManager.Instance.m_UIManager.bosshealthBar.maxValue = maxBossHealth;
             currentBossHealth = maxBossHealth;
-            UIManager.instance.SetBossHealth(maxBossHealth);
+            GameManager.Instance.m_UIManager.SetBossHealth(maxBossHealth);
         }
                 
     }
@@ -33,7 +36,7 @@ public class Health : MonoBehaviour
         if(!isPlayer)
         {
             currentBossHealth = currentBossHealth - damageAmount;
-            UIManager.instance.SetBossHealth(currentBossHealth);
+            GameManager.Instance.m_UIManager.SetBossHealth(currentBossHealth);
             //if(currentBossHealth < 5)
             //{
             //    GetComponent<BossController>().halfHealth = true;
@@ -53,7 +56,7 @@ public class Health : MonoBehaviour
             if (!invincible)
             {
                 --currentPlayerHealth;
-                UIManager.instance.SetPlayerHealth(currentPlayerHealth);
+                GameManager.Instance.m_UIManager.SetPlayerHealth(currentPlayerHealth);
                 invincible = true;
                 if (currentPlayerHealth <= 0)
                 {
@@ -90,18 +93,18 @@ public class Health : MonoBehaviour
     {
         if(isPlayer)
         {
-            GameManager.instance.LevelFail();
+            GameManager.Instance.LevelFail();
         }
         else if(bossDead)
         {
             Destroy(gameObject);
             int randomInt = Random.Range(0, 5);
-            if(randomInt > 3)
+            if(randomInt >= 3)
             {
                 Instantiate(item,transform.position, transform.rotation);
             }
             
-            GameManager.instance.ClearLevel();         
+            GameManager.Instance.ClearLevel();         
 
         }
     }

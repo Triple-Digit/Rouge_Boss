@@ -16,7 +16,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5927312859381306583, guid: d75883623d62e014682c67af3e8b5f51, type: 3}
   bulletSpeed: 15
   fireRate: 0.4
-  damage: 0.7
+  damage: 0.8
   maxAmmo: 10
   burstAmount: 1
   spreadAngle: 2

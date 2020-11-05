@@ -375,6 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb9cf1d6513a218448587d5016957c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_UIManager: {fileID: 3560744645511974958}
   playerPrefab: {fileID: 1695382998867409582, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
   levelExit: {fileID: 777347568260825129, guid: 6756bc002f03411489b5535cfddf3c97, type: 3}
   easyBossPrefabs:
@@ -396,7 +397,7 @@ MonoBehaviour:
   - {fileID: 6915824799729617250, guid: 0c30ccaa933289d46926d3a5f263ab4c, type: 3}
   - {fileID: 5494194323574492481, guid: df978d78e34f3db4d9c5f4ddf2a26db7, type: 3}
   difficultyFactor: 0
-  playerWeaponIndex: 3
+  playerWeaponIndex: 0
   weaponUnlock: 0
   uIManager: {fileID: 3560744645511974958}
   soundManager: {fileID: 3560744645511974959}
@@ -422,6 +423,8 @@ MonoBehaviour:
   - {fileID: 3560744646558083069}
   fullHeart: {fileID: 8109154662235370213, guid: 0b36e3628093f554fa61cc5014f562c3, type: 3}
   emptyHeart: {fileID: 2139837793675082937, guid: 0b36e3628093f554fa61cc5014f562c3, type: 3}
+  Grenade: {fileID: 5228437761383443163}
+  PauzeMenuObject: {fileID: 0}
 --- !u!114 &3560744645511974959
 MonoBehaviour:
   m_ObjectHideFlags: 0

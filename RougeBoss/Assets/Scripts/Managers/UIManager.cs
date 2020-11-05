@@ -6,28 +6,16 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    #region Singleton
-    public static UIManager instance = null;
-    
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-            Destroy(gameObject);
-
-        bosshealthBar.maxValue = bosshealth;
+    private void Awake() 
+    { 
         Grenade.enabled = false;
     }
-    #endregion
+
 
     #region Player and Boss Health Stats
     [SerializeField] private int playerHealth;
-    [SerializeField] private float bosshealth;
-    [SerializeField] private Slider bosshealthBar;
+    public float bosshealth;
+    public Slider bosshealthBar;
     [SerializeField] Image[] healthIcon;
     [SerializeField] Sprite fullHeart, emptyHeart;
     public Image Grenade;

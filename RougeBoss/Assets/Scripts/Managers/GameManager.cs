@@ -1,24 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     #region Singleton
-    public static GameManager instance = null;
+    private static GameManager instance;
+
+    public static GameManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = GameObject.FindObjectOfType<GameManager>();
+                if (instance == null)
+                {
+                    GameObject singleton = new GameObject();
+                    singleton.AddComponent<GameManager>();
+                    singleton.name = "(Singleton) GameManager";
+                }
+            }
+            return instance;
+        }
+    }
+
+    public static bool HasInstance()
+    {
+        return instance != null;
+    }
+
     private void Awake()
     {
-        if (instance == null)
+        if (HasInstance() && Instance != this)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            Destroy(this.gameObject);
+            return;
         }
-        else
-            Destroy(gameObject);
+        instance = this;
+        DontDestroyOnLoad(gameObject);
 
         startingGame = true;
-        uIManager = UIManager.instance;
         HUD = this.gameObject.transform.GetChild(0).gameObject;
         LoadLevel();
 
@@ -36,13 +60,14 @@ public class GameManager : MonoBehaviour
     public int weaponUnlock = 0;
 
     [Header("Managers")]
-    [SerializeField] UIManager uIManager;
     [SerializeField] SoundManager soundManager;
+    public UIManager m_UIManager;
 
     public bool startingGame = true;
     private GameObject HUD;
 
-    
+
+   
     public void LoadLevel()
     {
         if (!HUD.activeSelf)
@@ -63,8 +88,6 @@ public class GameManager : MonoBehaviour
 
     void LoadBossAndArena(int difficulty)
     {             
-        
-
         if (difficulty <= 3 )
         {
             int randomBossInt = Random.Range(0, easyBossPrefabs.Length - 1);
@@ -93,21 +116,30 @@ public class GameManager : MonoBehaviour
     public void LevelComplete()
     {
         ++difficultyFactor;
-        ++weaponUnlock;
         PlayerController.instance.playerHealth.invincible = false;
         LoadLevel();
     }
 
     public void LevelFail()
     {
+        weaponUnlock += difficultyFactor;
         HUD.SetActive(false);
         SceneManager.LoadScene("Upgrade_scene");
     }
     
     public void ArenaLoad()
     {
+        StartCoroutine(WaitForSceneLoad());
+    }
+
+    private IEnumerator WaitForSceneLoad()
+    {
         startingGame = true;
-        SceneManager.LoadScene("Seb_scene");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Seb_scene");
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
         LoadLevel();
     }
 }

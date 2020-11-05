@@ -13,14 +13,14 @@ public class SelectWeapon : MonoBehaviour
     
     public void SelectGun()
     {
-        GameManager.instance.playerWeaponIndex = guns.weaponID;
+        GameManager.Instance.playerWeaponIndex = guns.weaponID;
     }
 
     
 
     private void Start()
     {
-        int unlockCounter = GameManager.instance.weaponUnlock;
+        int unlockCounter = GameManager.Instance.weaponUnlock;
         bool WeaponUnlocked = unlockCounter >= WeaponRequirement;
         GetComponent<Button>().interactable = WeaponUnlocked;
         sprite.sprite = guns.sprite;

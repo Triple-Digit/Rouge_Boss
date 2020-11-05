@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
     {
          if (hasItem)
          {
-            UIManager.instance.Grenade.enabled = true;
+            GameManager.Instance.m_UIManager.Grenade.enabled = true;
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
          }
 
         else
-            UIManager.instance.Grenade.enabled = false;
+            GameManager.Instance.m_UIManager.Grenade.enabled = false;
 
         if (dashCounter > 0)
         {

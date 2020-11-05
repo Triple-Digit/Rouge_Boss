@@ -263,7 +263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c6f8c59ec083ac4ab23eeb12b744c66, type: 3}
---- !u!1001 &1654953730
+--- !u!1001 &1095072042
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -323,25 +323,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-      propertyPath: arenas.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: playerWeaponIndex
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-      propertyPath: difficultyFactor
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-      propertyPath: arenas.Array.data[0]
-      value: 
-      objectReference: {fileID: 7964005821116693908, guid: f9b1432ed857f5c40b5cea55ceb39481, type: 3}
-    - target: {fileID: 3560744645511974957, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-      propertyPath: arenas.Array.data[1]
-      value: 
-      objectReference: {fileID: 5553434347132827745, guid: de000fe338de6af45858e8272fddafab, type: 3}
     - target: {fileID: 3560744645511974992, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: m_Name
       value: Game_Manager
