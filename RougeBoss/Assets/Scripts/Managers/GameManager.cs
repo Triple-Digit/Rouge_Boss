@@ -6,35 +6,24 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     #region Singleton
-
-    public static GameManager instance = null;
-    
+    public static GameManager instance;
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-            Destroy(gameObject);
-
+        instance = this;
         startingGame = true;
         uIManager = UIManager.instance;
-        HUD = this.gameObject.transform.GetChild(0).gameObject;
         LoadLevel();
-        
-    }
 
+    }
     #endregion
 
     [Header("Level requirements")]
     [SerializeField] GameObject playerPrefab;
+    [SerializeField] GameObject levelExit;
     [SerializeField] GameObject[] easyBossPrefabs;
     [SerializeField] GameObject[] mediumBossPrefabs;
     [SerializeField] GameObject[] hardBossPrefabs;
-    [SerializeField] GameObject[] arenas;
-    public int difficultyFactor = 1;
+    public int difficultyFactor = 0;
     public int playerWeaponIndex = 0;
     public int weaponUnlock = 0;
 
@@ -42,18 +31,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] UIManager uIManager;
     [SerializeField] SoundManager soundManager;
 
-
     bool startingGame = true;
-    private GameObject HUD;
 
     
-    public void LoadLevel()
+    void LoadLevel()
     {
-        if(!HUD.activeSelf)
-        {
-            HUD.SetActive(true);
-        }
-        
         LoadBossAndArena(difficultyFactor);
 
         if(startingGame)
@@ -62,49 +44,46 @@ public class GameManager : MonoBehaviour
             Weapon.instance.EquipGun(playerWeaponIndex);
             startingGame = false;
         }
-
     }
-
 
     void LoadBossAndArena(int difficulty)
     {             
-        
-        if(difficulty <= 3 )
+        PlayerController.instance.playerHealth.invincible = false;
+
+        if (difficulty <= 3 )
         {
             int randomBossInt = Random.Range(0, easyBossPrefabs.Length - 1);
             Instantiate(easyBossPrefabs[randomBossInt]);
         }
 
-        if (difficulty > 3 && difficulty < 6)
+        if (difficulty > 2)
         {
             int randomBossInt = Random.Range(0, mediumBossPrefabs.Length - 1);
             Instantiate(mediumBossPrefabs[randomBossInt]);
         }
 
-        if (difficulty >= 6)
+        if (difficulty > 6)
         {
             int randomBossInt = Random.Range(0, hardBossPrefabs.Length - 1);
             Instantiate(hardBossPrefabs[randomBossInt]);
         }
-
     }
 
-    void ClearLevel()
+    public void ClearLevel()
     {
-        
+        PlayerController.instance.playerHealth.invincible = true;
+        Instantiate(levelExit);
     }
 
     public void LevelComplete()
     {
         ++difficultyFactor;
-        ++weaponUnlock;
         LoadLevel();
     }
 
     public void LevelFail()
     {
-        HUD.SetActive(false);
-        SceneManager.LoadScene("Upgrade_scene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
 }

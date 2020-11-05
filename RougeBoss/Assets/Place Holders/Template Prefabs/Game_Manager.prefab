@@ -375,6 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1695382998867409582, guid: b037e89abf6d9d246a92b88449075e04, type: 3}
+  levelExit: {fileID: 777347568260825129, guid: 6756bc002f03411489b5535cfddf3c97, type: 3}
   easyBossPrefabs:
   - {fileID: 5361500956341999076, guid: 7f086b298363a2b44aaf45c2b8f8f144, type: 3}
   - {fileID: 29856550732170159, guid: 3c82e34deea27f747b9f1f72abf9f8cf, type: 3}
