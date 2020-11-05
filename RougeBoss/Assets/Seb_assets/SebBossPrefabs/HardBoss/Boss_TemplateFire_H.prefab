@@ -289,7 +289,7 @@ MonoBehaviour:
     shouldShoot: 1
     aimAtPlayer: 0
     rotate: 1
-    rotationSpeed: -1
+    rotationSpeed: 1
     bulletPrefab: {fileID: 3153867998577864112, guid: fe7337dec334a9e42bbd06ddde265240, type: 3}
     fireRate: 0.2
     bulletSpeed: 5
@@ -319,9 +319,9 @@ MonoBehaviour:
   currentBossHealth: 0
   maxPlayerHealth: 0
   currentPlayerHealth: 0
-  invincible: 0
   invincibilityDuration: 0
   dropFactor: 0
+  invincible: 0
 --- !u!61 &8659689467298645116
 BoxCollider2D:
   m_ObjectHideFlags: 0
