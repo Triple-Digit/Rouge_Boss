@@ -7,16 +7,25 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
 
     float activeMoveSpeed, dashCounter;
-    [SerializeField] float moveSpeed;    
+    [SerializeField] float moveSpeed;
     [SerializeField] Transform aimDirection;
+<<<<<<< Updated upstream
     [SerializeField] float dashSpeed, dashLength, grenadeSpeed;
     [SerializeField] bool hasItem;
+=======
+
+    private Animator animator;
+    private bool isWalking;
+    
+    [SerializeField] float dashSpeed, dashLength, grenadeSpeed;    
+>>>>>>> Stashed changes
     [SerializeField] GameObject grenade;
+    public bool hasItem;
 
     Rigidbody2D body;
     Camera gameCamera;
     Vector2 moveInput;
-    Health playerHealth;
+    public Health playerHealth;
 
     private void Awake()
     {
@@ -28,16 +37,31 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        UseItem();
         Move();
         Aim();
+<<<<<<< Updated upstream
         UseItem();
+=======
+
+        ManageAnimations();
+>>>>>>> Stashed changes
     }
-    
+
     void Move()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput.Normalize();
+<<<<<<< Updated upstream
+=======
+
+        if (isWalking)
+        {
+            body.velocity = moveInput * moveSpeed;
+        }
+
+>>>>>>> Stashed changes
         body.velocity = moveInput * activeMoveSpeed;
     }
 
@@ -46,9 +70,9 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 mousePosition = Input.mousePosition;
         Vector3 screenPoint = gameCamera.WorldToScreenPoint(transform.localPosition);
-        
-        if(mousePosition.x < screenPoint.x) 
-        { 
+
+        if (mousePosition.x < screenPoint.x)
+        {
             transform.localScale = new Vector3(-1f, 1f, 1f);
             aimDirection.localScale = new Vector3(-1f, -1f, 1f);
         }
@@ -63,10 +87,24 @@ public class PlayerController : MonoBehaviour
         aimDirection.rotation = Quaternion.Euler(0, 0, angle);
     }
 
+<<<<<<< Updated upstream
+=======
+    void ManageAnimations()
+    {
+        if (isWalking)
+        {
+            animator.SetFloat("Horizontal", moveInput.x);
+            animator.SetFloat("Vertical", moveInput.y);
+            animator.SetFloat("Magnitude", moveInput.sqrMagnitude);
+        }
+
+    }
+
+>>>>>>> Stashed changes
     void UseItem()
     {
-        if(hasItem)
-        {
+         if (hasItem)
+         {
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 activeMoveSpeed = dashSpeed;
@@ -74,18 +112,19 @@ public class PlayerController : MonoBehaviour
                 playerHealth.invincible = true;
                 hasItem = false;
             }
-            
-            if(Input.GetKeyDown(KeyCode.Q))
+
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 Weapon.instance.ShootGrenade(grenade, grenadeSpeed);
                 hasItem = false;
             }
 
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 Weapon.instance.EMP();
                 hasItem = false;
             }
+<<<<<<< Updated upstream
 
 
         }
@@ -102,6 +141,21 @@ public class PlayerController : MonoBehaviour
 
 
     }
+=======
+         }
+
+         if (dashCounter > 0)
+         {
+             dashCounter -= Time.deltaTime;
+             if (dashCounter <= 0)
+             {
+                 activeMoveSpeed = moveSpeed;
+                 playerHealth.invincible = false;
+             }
+         }                       
+    }  
+}
+>>>>>>> Stashed changes
 
     
-}
+

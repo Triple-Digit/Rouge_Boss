@@ -9,6 +9,13 @@ public class Health : MonoBehaviour
     [SerializeField] int maxPlayerHealth, currentPlayerHealth;    
     [SerializeField] float invincibilityDuration;
     [SerializeField] int dropFactor=1;
+<<<<<<< Updated upstream
+=======
+    [SerializeField] GameObject item;
+    private bool bossDead;
+
+
+>>>>>>> Stashed changes
     public bool invincible;
 
     private void Awake()
@@ -87,7 +94,19 @@ public class Health : MonoBehaviour
         }
         else
         {
+<<<<<<< Updated upstream
             GameManager.instance.LevelComplete();
+=======
+
+            Destroy(gameObject);
+            int randomInt = Random.Range(0, 5);
+            if(randomInt > 3)
+            {
+                Instantiate(item);
+            }
+            
+            GameManager.instance.ClearLevel();         
+>>>>>>> Stashed changes
         }
     }
 

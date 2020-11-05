@@ -19,12 +19,20 @@ public class GameManager : MonoBehaviour
 
     [Header("Level requirements")]
     [SerializeField] GameObject playerPrefab;
+    [SerializeField] GameObject levelExit;
     [SerializeField] GameObject[] easyBossPrefabs;
     [SerializeField] GameObject[] mediumBossPrefabs;
     [SerializeField] GameObject[] hardBossPrefabs;
     [SerializeField] GameObject[] arenas;
+<<<<<<< Updated upstream
     [SerializeField] int difficultyFactor = 1;
     [SerializeField] int playerWeaponIndex = 0;
+=======
+    
+    public int difficultyFactor = 0;
+    public int playerWeaponIndex = 0;
+    public int weaponUnlock = 0;
+>>>>>>> Stashed changes
 
     [Header("Managers")]
     [SerializeField] UIManager uIManager;
@@ -51,9 +59,16 @@ public class GameManager : MonoBehaviour
     }
 
     void LoadBossAndArena(int difficulty)
+<<<<<<< Updated upstream
     {             
         
         if(difficulty < 2)
+=======
+    {
+        PlayerController.instance.playerHealth.invincible = false;
+
+        if (difficulty <= 3 )
+>>>>>>> Stashed changes
         {
             int randomBossInt = Random.Range(0, easyBossPrefabs.Length - 1);
             Instantiate(easyBossPrefabs[randomBossInt]);
@@ -73,9 +88,10 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void ClearLevel()
+    public void ClearLevel()
     {
-        
+        PlayerController.instance.playerHealth.invincible = true;
+        Instantiate(levelExit);
     }
 
     public void LevelComplete()
