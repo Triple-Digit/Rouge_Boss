@@ -11,7 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dmitri_scene.unity
     guid: 082cf5b33f8595640bfea7e69ea51f4a
-  - enabled: 1
-    path: Assets/Scenes/Seb_scene.unity
-    guid: b0546473e084ca546a87c535fab7b9ab
   m_configObjects: {}
