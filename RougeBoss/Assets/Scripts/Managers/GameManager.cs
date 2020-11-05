@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     bool startingGame = true;
 
     
-    void LoadLevel()
+    public void LoadLevel()
     {
         LoadBossAndArena(difficultyFactor);
 
