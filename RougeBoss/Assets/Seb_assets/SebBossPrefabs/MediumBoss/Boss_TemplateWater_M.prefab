@@ -169,13 +169,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  maxBossHealth: 50
+  maxBossHealth: 60
   currentBossHealth: 0
   maxPlayerHealth: 0
   currentPlayerHealth: 0
-  invincible: 0
   invincibilityDuration: 0
   dropFactor: 0
+  item: {fileID: 0}
+  invincible: 0
 --- !u!70 &8781062552623358220
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
