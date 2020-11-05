@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         playerHealth = GetComponent<Health>();
         animator = transform.Find("Player_Sprite").GetComponent<Animator>();
+        activeMoveSpeed = moveSpeed;
     }
 
     void Update()
@@ -51,9 +52,10 @@ public class PlayerController : MonoBehaviour
         moveInput.Normalize();
         if (isWalking)
         {
-            body.velocity = moveInput * moveSpeed;
+            body.velocity = moveInput * activeMoveSpeed;
+
         }
-        //body.velocity = moveInput * activeMoveSpeed;
+
     }
 
 
@@ -96,6 +98,8 @@ public class PlayerController : MonoBehaviour
     {
          if (hasItem)
          {
+            UIManager.instance.Grenade.enabled = true;
+
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 activeMoveSpeed = dashSpeed;
@@ -115,20 +119,21 @@ public class PlayerController : MonoBehaviour
                 Weapon.instance.EMP();
                 hasItem = false;
             }
-
-
-
          }
 
-        if(dashCounter > 0)
+        else
+            UIManager.instance.Grenade.enabled = false;
+
+        if (dashCounter > 0)
         {
             dashCounter -= Time.deltaTime;
-            if(dashCounter<=0)
+            if (dashCounter <= 0)
             {
                 activeMoveSpeed = moveSpeed;
                 playerHealth.invincible = false;
             }
         }
+        
 
 
     }

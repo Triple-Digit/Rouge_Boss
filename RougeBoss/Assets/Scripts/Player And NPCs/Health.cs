@@ -98,7 +98,7 @@ public class Health : MonoBehaviour
             int randomInt = Random.Range(0, 5);
             if(randomInt > 3)
             {
-                Instantiate(item);
+                Instantiate(item,transform.position, transform.rotation);
             }
             
             GameManager.instance.ClearLevel();         

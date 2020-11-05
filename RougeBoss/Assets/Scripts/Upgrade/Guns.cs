@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Guns : ScriptableObject
 {
     public string nameOfGun;
-    //public Sprite gunSprite;
     public GameObject bulletPrefab;
     public float bulletSpeed, fireRate, damage;
     public int maxAmmo, burstAmount;

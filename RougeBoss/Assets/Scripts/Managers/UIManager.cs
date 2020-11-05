@@ -17,7 +17,9 @@ public class UIManager : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
         bosshealthBar.maxValue = bosshealth;
+        Grenade.enabled = false;
     }
     #endregion
 
@@ -27,6 +29,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider bosshealthBar;
     [SerializeField] Image[] healthIcon;
     [SerializeField] Sprite fullHeart, emptyHeart;
+    public Image Grenade;
 
     
     

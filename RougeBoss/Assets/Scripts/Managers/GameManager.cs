@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] UIManager uIManager;
     [SerializeField] SoundManager soundManager;
 
-    bool startingGame = true;
+    public bool startingGame = true;
     private GameObject HUD;
 
     
@@ -55,14 +55,15 @@ public class GameManager : MonoBehaviour
         if(startingGame)
         {
             Instantiate(playerPrefab);
-            Weapon.instance.EquipGun(playerWeaponIndex);
+            Weapon.instance.activeGun = playerWeaponIndex;
+            Weapon.instance.EquipGun();
             startingGame = false;
         }
     }
 
     void LoadBossAndArena(int difficulty)
     {             
-        //PlayerController.instance.playerHealth.invincible = false;
+        
 
         if (difficulty <= 3 )
         {
@@ -93,6 +94,7 @@ public class GameManager : MonoBehaviour
     {
         ++difficultyFactor;
         ++weaponUnlock;
+        PlayerController.instance.playerHealth.invincible = false;
         LoadLevel();
     }
 
@@ -102,4 +104,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Upgrade_scene");
     }
     
+    public void ArenaLoad()
+    {
+        startingGame = true;
+        SceneManager.LoadScene("Seb_scene");
+        LoadLevel();
+    }
 }

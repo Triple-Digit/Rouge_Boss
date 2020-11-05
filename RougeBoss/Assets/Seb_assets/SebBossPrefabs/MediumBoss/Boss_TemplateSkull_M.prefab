@@ -690,9 +690,10 @@ MonoBehaviour:
   currentBossHealth: 0
   maxPlayerHealth: 0
   currentPlayerHealth: 0
-  invincible: 0
   invincibilityDuration: 0
   dropFactor: 0
+  item: {fileID: 7114964534169785382, guid: 992abace602c20542894463c1edf8ecf, type: 3}
+  invincible: 0
 --- !u!61 &7794320164821977093
 BoxCollider2D:
   m_ObjectHideFlags: 0

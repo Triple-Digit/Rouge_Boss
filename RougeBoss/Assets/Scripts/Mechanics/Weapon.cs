@@ -9,7 +9,6 @@ public class Weapon : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        EquipGun(activeGun);
         canShoot = true;
     }
     #endregion    
@@ -17,8 +16,7 @@ public class Weapon : MonoBehaviour
     [Tooltip("Choose a number from 0 to the total number of weapon types in the list below to set as the active weapon")]
 
 
-    [SerializeField]
-    private int activeGun;
+    public int activeGun;
 
     #region Active Gun Variables
     
@@ -58,9 +56,8 @@ public class Weapon : MonoBehaviour
 
 
 
-    public void EquipGun(int weaponIndex)
+    public void EquipGun()
     {
-        activeGun = weaponIndex;
 
         sprite.sprite = guns[activeGun].sprite;
   
