@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] mediumBossPrefabs;
     [SerializeField] GameObject[] hardBossPrefabs;
     [SerializeField] GameObject[] arenas;
-    public int difficultyFactor = 0;
+    public int difficultyFactor = 1;
     public int playerWeaponIndex = 0;
     public int weaponUnlock = 0;
 

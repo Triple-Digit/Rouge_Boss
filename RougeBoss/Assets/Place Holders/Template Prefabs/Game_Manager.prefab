@@ -395,7 +395,7 @@ MonoBehaviour:
   - {fileID: 5494194323574492481, guid: df978d78e34f3db4d9c5f4ddf2a26db7, type: 3}
   arenas: []
   difficultyFactor: 1
-  playerWeaponIndex: 3
+  playerWeaponIndex: 5
   weaponUnlock: 0
   uIManager: {fileID: 3560744645511974958}
   soundManager: {fileID: 3560744645511974959}
