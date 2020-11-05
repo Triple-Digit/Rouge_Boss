@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2809681557377499325}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.221625, y: 14.942709, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: db8e87220ec46044eb39a54aa61c76e6, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.055066347, a: 1}
+  m_Sprite: {fileID: 1471692541922599944, guid: fe5513da334aea140bc283b31adf34e6, type: 3}
+  m_Color: {r: 0.7830189, g: 0.3840274, b: 0.2031417, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -124,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.1, y: 1.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -153,7 +153,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2bff772931c794e498318605b864d4bd, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -204,8 +204,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 1, b: 0.054901965, a: 1}
-      key1: {r: 0, g: 1, b: 0.054901965, a: 1}
+      key0: {r: 0.7843138, g: 0.38431376, b: 0.20392159, a: 1}
+      key1: {r: 0.7843138, g: 0.38431376, b: 0.20392159, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -221,7 +221,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 32960
+      atime1: 65535
       atime2: 65535
       atime3: 0
       atime4: 0
@@ -230,7 +230,7 @@ TrailRenderer:
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 3
+      m_NumAlphaKeys: 2
     numCornerVertices: 90
     numCapVertices: 0
     alignment: 0
@@ -254,4 +254,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   speed: 20
-  bulletDuration: 1
+  bulletDuration: 0.5

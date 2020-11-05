@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Laser Gun
   m_EditorClassIdentifier: 
   nameOfGun: Laser Gun
-  bulletPrefab: {fileID: 5697706477066808601, guid: a3ed0b4906c03a04881cb92f7b27a784, type: 3}
-  bulletSpeed: 50
+  bulletPrefab: {fileID: 7223702009822404044, guid: eff9bdc3dd5db0d4bbdb2dbabfd029ed, type: 3}
+  bulletSpeed: 30
   fireRate: 1
-  damage: 1
+  damage: 2
   maxAmmo: 0
   burstAmount: 1
   spreadAngle: 0
