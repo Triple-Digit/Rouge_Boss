@@ -110,10 +110,10 @@ public class Weapon : MonoBehaviour
 
     public void EMP()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(shootingPoint.position, 20f);
+        Collider[] hitColliders = Physics.OverlapSphere(shootingPoint.position, 50f);
         foreach (var hitCollider in hitColliders)
         {
-            if(hitCollider.gameObject.tag == "EnemyBullet")
+            if(hitCollider.CompareTag("EnemyBullet"))
             {
                 Destroy(hitCollider.gameObject);
             }
