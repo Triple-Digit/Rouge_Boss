@@ -95,9 +95,9 @@ GameObject:
   - component: {fileID: 3770307500434939584}
   - component: {fileID: 3770307500434939585}
   - component: {fileID: 2028597610234433721}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boss_Template
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,7 +171,7 @@ MonoBehaviour:
   - actionType: Chase
     actionLength: 5
     halfHealthAction: 0
-    shouldMove: 0
+    shouldMove: 1
     moveToPoint: 0
     shouldChase: 1
     moveSpeed: 2
@@ -182,48 +182,6 @@ MonoBehaviour:
     rotationSpeed: 10
     bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
     fireRate: 0.01
-    bulletSpeed: 8
-    shootingPointHolder: {fileID: 3770307502121507566}
-    shootingPoints:
-    - {fileID: 3770307501264031475}
-    - {fileID: 3770307501104284521}
-    - {fileID: 3770307500928835194}
-    - {fileID: 3770307501502482065}
-  - actionType: Shoot
-    actionLength: 3
-    halfHealthAction: 0
-    shouldMove: 0
-    moveToPoint: 0
-    shouldChase: 0
-    moveSpeed: 0
-    pointsToMoveTo: []
-    shouldShoot: 1
-    aimAtPlayer: 0
-    rotate: 1
-    rotationSpeed: 6
-    bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
-    fireRate: 1.2
-    bulletSpeed: 10
-    shootingPointHolder: {fileID: 3770307502121507566}
-    shootingPoints:
-    - {fileID: 3770307501264031475}
-    - {fileID: 3770307500928835194}
-    - {fileID: 3770307501104284521}
-    - {fileID: 3770307501502482065}
-  - actionType: Chase and Shoot
-    actionLength: 5
-    halfHealthAction: 1
-    shouldMove: 0
-    moveToPoint: 0
-    shouldChase: 1
-    moveSpeed: 3.3
-    pointsToMoveTo: []
-    shouldShoot: 1
-    aimAtPlayer: 0
-    rotate: 1
-    rotationSpeed: 1
-    bulletPrefab: {fileID: 7223702009822404044, guid: da53432653c2abf4ebb6c1b000fcdbdb, type: 3}
-    fireRate: 0.25
     bulletSpeed: 8
     shootingPointHolder: {fileID: 3770307502121507566}
     shootingPoints:

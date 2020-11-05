@@ -1,0 +1,1258 @@
+fileFormatVersion: 2
+guid: 46665bceee0aa7c468c74e97ce4c2422
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7510867864860134512
+    second: Environment_Lab Dungeon_0
+  - first:
+      213: -2073221055112566893
+    second: Environment_Lab Dungeon_1
+  - first:
+      213: 268261954528006555
+    second: Environment_Lab Dungeon_2
+  - first:
+      213: -5865690114022100675
+    second: Environment_Lab Dungeon_3
+  - first:
+      213: -5359484242309035382
+    second: Environment_Lab Dungeon_4
+  - first:
+      213: -898119738130830528
+    second: Environment_Lab Dungeon_5
+  - first:
+      213: 152163712979508054
+    second: Environment_Lab Dungeon_6
+  - first:
+      213: 5561274048452210578
+    second: Environment_Lab Dungeon_7
+  - first:
+      213: -7340126426154291725
+    second: Environment_Lab Dungeon_8
+  - first:
+      213: -5010053126078840641
+    second: Environment_Lab Dungeon_9
+  - first:
+      213: -3866066791850629863
+    second: Environment_Lab Dungeon_10
+  - first:
+      213: 4737038830761904186
+    second: Environment_Lab Dungeon_11
+  - first:
+      213: 6815025990806155020
+    second: Environment_Lab Dungeon_12
+  - first:
+      213: 8699873518713380136
+    second: Environment_Lab Dungeon_13
+  - first:
+      213: 7032173353065203501
+    second: Environment_Lab Dungeon_14
+  - first:
+      213: 7991788794784684150
+    second: Environment_Lab Dungeon_15
+  - first:
+      213: 8126429580498858798
+    second: Environment_Lab Dungeon_16
+  - first:
+      213: -1540207564014526237
+    second: Environment_Lab Dungeon_17
+  - first:
+      213: 5934137306328990587
+    second: Environment_Lab Dungeon_18
+  - first:
+      213: 3643810569535383307
+    second: Environment_Lab Dungeon_19
+  - first:
+      213: 1002201310639194029
+    second: Environment_Lab Dungeon_20
+  - first:
+      213: 7185470872488007734
+    second: Environment_Lab Dungeon_21
+  - first:
+      213: -2991046995902987607
+    second: Environment_Lab Dungeon_22
+  - first:
+      213: -358143572432717190
+    second: Environment_Lab Dungeon_23
+  - first:
+      213: 3956702081583491181
+    second: Environment_Lab Dungeon_24
+  - first:
+      213: 5692317693522597579
+    second: Environment_Lab Dungeon_25
+  - first:
+      213: -6843722331017954819
+    second: Environment_Lab Dungeon_26
+  - first:
+      213: -4299486640155388689
+    second: Environment_Lab Dungeon_27
+  - first:
+      213: -4052345343389494453
+    second: Environment_Lab Dungeon_28
+  - first:
+      213: -4202585284494737186
+    second: Environment_Lab Dungeon_29
+  - first:
+      213: 3805708002896369550
+    second: Environment_Lab Dungeon_30
+  - first:
+      213: 1369329593618330765
+    second: Environment_Lab Dungeon_31
+  - first:
+      213: -544181337731383302
+    second: Environment_Lab Dungeon_32
+  - first:
+      213: -1689981426238900419
+    second: Environment_Lab Dungeon_33
+  - first:
+      213: 8102150937759915749
+    second: Environment_Lab Dungeon_34
+  - first:
+      213: 843003025835963309
+    second: Environment_Lab Dungeon_35
+  - first:
+      213: 3114334025339299734
+    second: Environment_Lab Dungeon_36
+  - first:
+      213: -4600551331331158521
+    second: Environment_Lab Dungeon_37
+  - first:
+      213: 3999121931209778042
+    second: Environment_Lab Dungeon_38
+  - first:
+      213: -7185213042214833350
+    second: Environment_Lab Dungeon_39
+  - first:
+      213: 305926789421833055
+    second: Environment_Lab Dungeon_40
+  - first:
+      213: -2136251861870298473
+    second: Environment_Lab Dungeon_41
+  - first:
+      213: -961493345753180238
+    second: Environment_Lab Dungeon_42
+  - first:
+      213: -170030548824368204
+    second: Environment_Lab Dungeon_43
+  - first:
+      213: 7001482947606236387
+    second: Environment_Lab Dungeon_44
+  - first:
+      213: 4782017605537375891
+    second: Environment_Lab Dungeon_45
+  - first:
+      213: 2861007550185865818
+    second: Environment_Lab Dungeon_46
+  - first:
+      213: -4554052089597741568
+    second: Environment_Lab Dungeon_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 444
+        width: 46
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c82ef5786fb3860800000000000000
+      internalID: 7510867864860134512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 491
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397a72d4f607a33e0800000000000000
+      internalID: -2073221055112566893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_2
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 440
+        width: 45
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91d46a83de09b300800000000000000
+      internalID: 268261954528006555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_3
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 440
+        width: 46
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3131374be1e89ea0800000000000000
+      internalID: -5865690114022100675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_4
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 485
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8acdd53a794f95b0800000000000000
+      internalID: -5359484242309035382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_5
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 485
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04be1fa4bdc3983f0800000000000000
+      internalID: -898119738130830528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_6
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 485
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b19db37189c1200800000000000000
+      internalID: 152163712979508054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_7
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 473
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fa79c384d9d2d40800000000000000
+      internalID: 5561274048452210578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_8
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 473
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdad92b7e1a22a90800000000000000
+      internalID: -7340126426154291725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_9
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 442
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb04c3ae937b87ab0800000000000000
+      internalID: -5010053126078840641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_10
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 339
+        width: 146
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9152fc17cb8f85ac0800000000000000
+      internalID: -3866066791850629863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 442
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a388bcaf7b75db140800000000000000
+      internalID: 4737038830761904186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_12
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 376
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f2e05f706d39e50800000000000000
+      internalID: 6815025990806155020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_13
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 395
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d1db11fd82cb870800000000000000
+      internalID: 8699873518713380136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_14
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 393
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d274b64186c479160800000000000000
+      internalID: 7032173353065203501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_15
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 386
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6789619019988ee60800000000000000
+      internalID: 7991788794784684150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_16
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 386
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e237cd5d5a0e6c070800000000000000
+      internalID: 8126429580498858798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_17
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 391
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e06b82816510aae0800000000000000
+      internalID: -1540207564014526237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 345
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b730220907a4a5250800000000000000
+      internalID: 5934137306328990587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_19
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 343
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0768f1486a619230800000000000000
+      internalID: 3643810569535383307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_20
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 337
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf741a38c888ed00800000000000000
+      internalID: 1002201310639194029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_21
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 337
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638509230bbe7b360800000000000000
+      internalID: 7185470872488007734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_22
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 339
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a204beba9aad76d0800000000000000
+      internalID: -2991046995902987607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_23
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 327
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7afe82815e970bf0800000000000000
+      internalID: -358143572432717190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_24
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 327
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6825d6649709e630800000000000000
+      internalID: 3956702081583491181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_25
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 296
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6d51778cc2ffe40800000000000000
+      internalID: 5692317693522597579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_26
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 294
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9344eacc63601a0800000000000000
+      internalID: -6843722331017954819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_27
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 288
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe410013ea72554c0800000000000000
+      internalID: -4299486640155388689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_28
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 290
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b439f04616d23c7c0800000000000000
+      internalID: -4052345343389494453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_29
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 290
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0486333fa6da5c0800000000000000
+      internalID: -4202585284494737186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_30
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 290
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87df7fd34790d430800000000000000
+      internalID: 3805708002896369550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_31
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 212
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84fc08a206d00310800000000000000
+      internalID: 1369329593618330765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_32
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 212
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affbf1fd4fda278f0800000000000000
+      internalID: -544181337731383302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_33
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 193
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37b504c8dafb88e0800000000000000
+      internalID: -1689981426238900419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_34
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 224
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee17c1d95f907070800000000000000
+      internalID: 8102150937759915749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_35
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 164
+        width: 109
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3388b19c2f2bb00800000000000000
+      internalID: 843003025835963309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_36
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 224
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697e24cab46583b20800000000000000
+      internalID: 3114334025339299734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_37
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 193
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e4e0d50fe8720c0800000000000000
+      internalID: -4600551331331158521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_38
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 115
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73ab3b453cbf7730800000000000000
+      internalID: 3999121931209778042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_39
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 164
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33f7479ecef84c90800000000000000
+      internalID: -7185213042214833350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_40
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 164
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b93ca4bcede3400800000000000000
+      internalID: 305926789421833055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_41
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 113
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a347eff328a52e0800000000000000
+      internalID: -2136251861870298473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_42
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 113
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7da7075e618a2f0800000000000000
+      internalID: -961493345753180238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_43
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 63
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbdb50ed1ee3adf0800000000000000
+      internalID: -170030548824368204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_44
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 63
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec460935a34a2160800000000000000
+      internalID: 7001482947606236387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_45
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 61
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39628bf0da32d5240800000000000000
+      internalID: 4782017605537375891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_46
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 121
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a520a88653754b720800000000000000
+      internalID: 2861007550185865818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Lab Dungeon_47
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 162
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006b6eeb0c1ccc0c0800000000000000
+      internalID: -4554052089597741568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

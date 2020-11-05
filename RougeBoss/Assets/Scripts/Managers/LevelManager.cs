@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
-{
-    
-
+{   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
@@ -13,8 +11,4 @@ public class LevelManager : MonoBehaviour
             GameManager.instance.LevelComplete();
         }
     }
-
-
-
-
 }

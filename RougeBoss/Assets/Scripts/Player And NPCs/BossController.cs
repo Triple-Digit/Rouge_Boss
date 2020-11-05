@@ -16,10 +16,12 @@ public class BossController : MonoBehaviour
     public bool halfHealth; 
     bool goingbackwardsthroughWaypoints;
     Rigidbody2D body;
+    private Animator animator;
     
 
     private void Awake()
     {
+        animator = transform.Find("Boss_Sprite").GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         halfHealth = false;
         goingbackwardsthroughWaypoints = false;
@@ -66,9 +68,12 @@ public class BossController : MonoBehaviour
 
     void Movement()
     {
-        if (actions[currentAction].shouldMove)
+        if (actions[currentAction].shouldMove || actions[currentAction].rotate)
         {
+            actions[currentAction].shootingPointHolder.Rotate(0, 0, actions[currentAction].rotationSpeed * 100 * Time.deltaTime);
+
             moveDirection = Vector2.zero;
+
             if (actions[currentAction].shouldChase)
             {
                 moveDirection = PlayerController.instance.transform.position - transform.position;
@@ -97,7 +102,9 @@ public class BossController : MonoBehaviour
             }
             body.velocity = moveDirection * actions[currentAction].moveSpeed;
         }
-        else return;
+        else
+            return;
+      
     }
 
     void Shoot()
@@ -124,6 +131,8 @@ public class BossController : MonoBehaviour
         }
         else return;
     }
+
+    
 
 }
 [System.Serializable]

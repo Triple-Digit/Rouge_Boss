@@ -23,13 +23,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] easyBossPrefabs;
     [SerializeField] GameObject[] mediumBossPrefabs;
     [SerializeField] GameObject[] hardBossPrefabs;
-    [SerializeField] GameObject[] arenas;
-
-    
     public int difficultyFactor = 0;
     public int playerWeaponIndex = 0;
     public int weaponUnlock = 0;
-
 
     [Header("Managers")]
     [SerializeField] UIManager uIManager;
@@ -48,24 +44,13 @@ public class GameManager : MonoBehaviour
             Weapon.instance.EquipGun(playerWeaponIndex);
             startingGame = false;
         }
-
-        
-
-
-
     }
 
     void LoadBossAndArena(int difficulty)
-<<<<<<< Updated upstream
     {             
-        
-        if(difficulty < 2)
-=======
-    {
         PlayerController.instance.playerHealth.invincible = false;
 
         if (difficulty <= 3 )
->>>>>>> Stashed changes
         {
             int randomBossInt = Random.Range(0, easyBossPrefabs.Length - 1);
             Instantiate(easyBossPrefabs[randomBossInt]);
@@ -82,7 +67,6 @@ public class GameManager : MonoBehaviour
             int randomBossInt = Random.Range(0, hardBossPrefabs.Length - 1);
             Instantiate(hardBossPrefabs[randomBossInt]);
         }
-
     }
 
     public void ClearLevel()

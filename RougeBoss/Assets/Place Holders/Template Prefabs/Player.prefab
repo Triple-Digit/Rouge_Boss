@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1695382997417673119}
   - component: {fileID: 1695382997417673116}
+  - component: {fileID: 3735871061122861128}
   m_Layer: 0
   m_Name: Player_Sprite
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1695382997417673118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.2549183, y: 0.2549183, z: 0.5098366}
   m_Children: []
   m_Father: {fileID: 1695382998867409581}
   m_RootOrder: 0
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a60412fbe127a47428146b4df750c224, type: 3}
-  m_Color: {r: 1, g: 0.6112615, b: 0.0047169924, a: 1}
+  m_Sprite: {fileID: 9122879786362317091, guid: 38916d89dde520a4a89f24147702101f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -82,6 +83,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3735871061122861128
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695382997417673118}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c31b7ea92df2e64088e15bf15110936, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1695382998634958265
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,8 +127,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695382998634958265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.2, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.24343069, y: 0.24343069, z: 0.24343069}
   m_Children: []
   m_Father: {fileID: 1695382999066098809}
   m_RootOrder: 0
@@ -153,12 +173,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a60412fbe127a47428146b4df750c224, type: 3}
-  m_Color: {r: 0.094562136, g: 0.14815927, b: 0.16037738, a: 1}
+  m_Sprite: {fileID: -6551439491527740289, guid: 76b836b086f90ec4f96f7ecc7fd4aaa7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.4, y: 2.095}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -174,10 +194,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1695382998867409581}
   - component: {fileID: 1695382998867409583}
-  - component: {fileID: 1695382998867409571}
   - component: {fileID: 1695382998867409580}
   - component: {fileID: 1186878662533427126}
-  m_Layer: 0
+  - component: {fileID: 1976935209}
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -192,7 +212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695382998867409582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.68, y: 2.1, z: 0}
+  m_LocalPosition: {x: 0, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1695382997417673119}
@@ -221,32 +241,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1695382998867409571
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695382998867409582}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
-  m_EdgeRadius: 0
 --- !u!114 &1695382998867409580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8590655717d4f8c45a61d0dba42bf361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3.5
+  moveSpeed: 4
   aimDirection: {fileID: 1695382999066098809}
 --- !u!114 &1186878662533427126
 MonoBehaviour:
@@ -281,6 +275,32 @@ MonoBehaviour:
   invincible: 0
   invincibilityDuration: 1
   dropFactor: 0
+--- !u!61 &1976935209
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695382998867409582}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.004210949, y: 0.0046026707}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64114213, y: 1.0316586}
+  m_EdgeRadius: 0
 --- !u!1 &1695382999066098808
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695382999066098808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 0, z: 0}
+  m_LocalPosition: {x: 0.455, y: -0.074, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1695382998634958270}
@@ -328,44 +348,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeGun: 0
   shootingPoint: {fileID: 1695382999205833230}
+  sprite: {fileID: 1695382998634958271}
   timeToShoot: 0
   updateGunVaribles: 0
   guns:
-  - nameOfGun: Basic Gun
-    bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 7
-    fireRate: 3
-    maxAmmo: 7
-    burstAmount: 1
-    spreadAngle: 1
-  - nameOfGun: Basic Smg
-    bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 10
-    fireRate: 1
-    maxAmmo: 10
-    burstAmount: 1
-    spreadAngle: 1
-  - nameOfGun: Assault rifle
-    bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 15
-    fireRate: 0.2
-    maxAmmo: 12
-    burstAmount: 1
-    spreadAngle: 1
-  - nameOfGun: Plasma Rifle
-    bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 2
-    fireRate: 0.5
-    maxAmmo: 7
-    burstAmount: 1
-    spreadAngle: 1
-  - nameOfGun: Basic Gun
-    bulletPrefab: {fileID: 7223702009822404044, guid: 1d58c1ecaba80574ead235aae27cbfc3, type: 3}
-    bulletSpeed: 7
-    fireRate: 3
-    maxAmmo: 7
-    burstAmount: 1
-    spreadAngle: 1
+  - {fileID: 11400000, guid: b2d874a62566be149bc0e2bc9360d472, type: 2}
+  - {fileID: 11400000, guid: 4acbcb6761b20114686b7ea04f0e7065, type: 2}
+  - {fileID: 11400000, guid: a13afdbfc938f9f43bcc59d03b1ee1f9, type: 2}
+  - {fileID: 11400000, guid: 42dfb183a7e60fb4fa12eb509991cd7c, type: 2}
+  - {fileID: 11400000, guid: 46ca92a5cbea8a54cb9ecd90a63f614e, type: 2}
+  - {fileID: 11400000, guid: 85c6ed3257c61134cab613588c3bad02, type: 2}
 --- !u!1 &1695382999205833225
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,7 +382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695382999205833225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.444, y: 0, z: 0}
+  m_LocalPosition: {x: 0.556, y: -0.013, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1695382999066098809}

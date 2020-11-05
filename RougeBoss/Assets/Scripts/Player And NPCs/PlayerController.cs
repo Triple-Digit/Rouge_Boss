@@ -9,18 +9,15 @@ public class PlayerController : MonoBehaviour
     float activeMoveSpeed, dashCounter;
     [SerializeField] float moveSpeed;
     [SerializeField] Transform aimDirection;
-<<<<<<< Updated upstream
+
     [SerializeField] float dashSpeed, dashLength, grenadeSpeed;
-    [SerializeField] bool hasItem;
-=======
+    public bool hasItem;
 
     private Animator animator;
     private bool isWalking;
     
-    [SerializeField] float dashSpeed, dashLength, grenadeSpeed;    
->>>>>>> Stashed changes
     [SerializeField] GameObject grenade;
-    public bool hasItem;
+
 
     Rigidbody2D body;
     Camera gameCamera;
@@ -40,12 +37,8 @@ public class PlayerController : MonoBehaviour
         UseItem();
         Move();
         Aim();
-<<<<<<< Updated upstream
         UseItem();
-=======
-
         ManageAnimations();
->>>>>>> Stashed changes
     }
 
     void Move()
@@ -53,15 +46,10 @@ public class PlayerController : MonoBehaviour
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput.Normalize();
-<<<<<<< Updated upstream
-=======
-
         if (isWalking)
         {
             body.velocity = moveInput * moveSpeed;
         }
-
->>>>>>> Stashed changes
         body.velocity = moveInput * activeMoveSpeed;
     }
 
@@ -87,8 +75,8 @@ public class PlayerController : MonoBehaviour
         aimDirection.rotation = Quaternion.Euler(0, 0, angle);
     }
 
-<<<<<<< Updated upstream
-=======
+
+
     void ManageAnimations()
     {
         if (isWalking)
@@ -100,7 +88,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
->>>>>>> Stashed changes
+
     void UseItem()
     {
          if (hasItem)
@@ -124,10 +112,10 @@ public class PlayerController : MonoBehaviour
                 Weapon.instance.EMP();
                 hasItem = false;
             }
-<<<<<<< Updated upstream
 
 
-        }
+
+         }
 
         if(dashCounter > 0)
         {
@@ -141,21 +129,7 @@ public class PlayerController : MonoBehaviour
 
 
     }
-=======
-         }
-
-         if (dashCounter > 0)
-         {
-             dashCounter -= Time.deltaTime;
-             if (dashCounter <= 0)
-             {
-                 activeMoveSpeed = moveSpeed;
-                 playerHealth.invincible = false;
-             }
-         }                       
-    }  
-}
->>>>>>> Stashed changes
+ }
 
     
 

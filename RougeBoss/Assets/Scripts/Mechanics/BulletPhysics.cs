@@ -5,8 +5,13 @@ using UnityEngine;
 public class BulletPhysics : MonoBehaviour
 {
     Rigidbody2D body;
-    public float damage = 1;
-    public float speed = 0;
+
+
+    public float damage = 1f;
+    public float speed = 0f;
+    public float bulletDuration = 3f;
+
+
 
 
     private void Awake()
@@ -17,7 +22,7 @@ public class BulletPhysics : MonoBehaviour
 
     IEnumerator DestroyBullet()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(bulletDuration);
         Destroy(gameObject);
     }
 
@@ -26,13 +31,8 @@ public class BulletPhysics : MonoBehaviour
         body.velocity = transform.right * speed;
     }
 
-
-    
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-
         if(collision.gameObject.tag == ("Player") || collision.gameObject.tag == ("Enemy"))
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(damage);
