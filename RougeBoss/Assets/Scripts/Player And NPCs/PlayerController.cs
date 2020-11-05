@@ -92,48 +92,43 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Vertical", moveInput.y);
             animator.SetFloat("Magnitude", moveInput.sqrMagnitude);
         }
-
-        void UseItem()
+    }
+    void UseItem()
+    {
+        if (hasItem)
         {
-            if (hasItem)
+            if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                if (Input.GetKeyDown(KeyCode.LeftShift))
-                {
-                    activeMoveSpeed = dashSpeed;
-                    dashCounter = dashLength;
-                    playerHealth.invincible = true;
-                    hasItem = false;
-                }
-
-                if (Input.GetKeyDown(KeyCode.Q))
-                {
-                    Weapon.instance.ShootGrenade(grenade, grenadeSpeed);
-                    hasItem = false;
-                }
-
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    Weapon.instance.EMP();
-                    hasItem = false;
-                }
-
-
+                activeMoveSpeed = dashSpeed;
+                dashCounter = dashLength;
+                playerHealth.invincible = true;
+                hasItem = false;
             }
 
-            if (dashCounter > 0)
+            if (Input.GetKeyDown(KeyCode.Q))
             {
-                dashCounter -= Time.deltaTime;
-                if (dashCounter <= 0)
-                {
-                    activeMoveSpeed = moveSpeed;
-                    playerHealth.invincible = false;
-                }
+                Weapon.instance.ShootGrenade(grenade, grenadeSpeed);
+                hasItem = false;
             }
 
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Weapon.instance.EMP();
+                hasItem = false;
+            }
 
 
         }
+
+        if (dashCounter > 0)
+        {
+            dashCounter -= Time.deltaTime;
+            if (dashCounter <= 0)
+            {
+                activeMoveSpeed = moveSpeed;
+                playerHealth.invincible = false;
+            }
+        }
     }
 }
-
 
