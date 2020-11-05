@@ -38,10 +38,15 @@ public class Health : MonoBehaviour
             //{
             //    GetComponent<BossController>().halfHealth = true;
             //}
-            if (currentBossHealth <= 0)
+            if (currentBossHealth <= 0 && !bossDead)
             {
-                Dead();
-            }
+                bossDead = true;
+
+                if (bossDead)
+                {
+                    Dead();
+                }
+            }  
         }
         else
         {
@@ -87,7 +92,7 @@ public class Health : MonoBehaviour
         {
             GameManager.instance.LevelFail();
         }
-        else
+        else if(bossDead)
         {
             Destroy(gameObject);
             int randomInt = Random.Range(0, 5);
