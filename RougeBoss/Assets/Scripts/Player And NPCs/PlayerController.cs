@@ -30,12 +30,15 @@ public class PlayerController : MonoBehaviour
         gameCamera = Camera.main;
         body = GetComponent<Rigidbody2D>();
         playerHealth = GetComponent<Health>();
+        animator = transform.Find("Player_Sprite").GetComponent<Animator>();
     }
 
     void Update()
     {
         UseItem();
         Move();
+        isWalking = (Mathf.Abs(moveInput.x) + Mathf.Abs(moveInput.y)) > 0;
+        animator.SetBool("IsWalking", isWalking);
         Aim();
         UseItem();
         ManageAnimations();
@@ -50,7 +53,7 @@ public class PlayerController : MonoBehaviour
         {
             body.velocity = moveInput * moveSpeed;
         }
-        body.velocity = moveInput * activeMoveSpeed;
+        //body.velocity = moveInput * activeMoveSpeed;
     }
 
 

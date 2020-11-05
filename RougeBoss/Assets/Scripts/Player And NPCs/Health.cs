@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
         else
         {
             currentBossHealth = maxBossHealth;
-            UIManager.instance.SetBossHealth(currentBossHealth);
+            UIManager.instance.SetBossHealth(maxBossHealth);
         }
                 
     }
@@ -34,14 +34,19 @@ public class Health : MonoBehaviour
         {
             currentBossHealth = currentBossHealth - damageAmount;
             UIManager.instance.SetBossHealth(currentBossHealth);
-            if(currentBossHealth < 5)
+            //if(currentBossHealth < 5)
+            //{
+            //    GetComponent<BossController>().halfHealth = true;
+            //}
+            if (currentBossHealth <= 0 && !bossDead)
             {
-                GetComponent<BossController>().halfHealth = true;
-            }
-            if (currentBossHealth <= 0)
-            {
-                Dead();
-            }
+                bossDead = true;
+
+                if (bossDead)
+                {
+                    Dead();
+                }
+            }  
         }
         else
         {
@@ -87,12 +92,8 @@ public class Health : MonoBehaviour
         {
             GameManager.instance.LevelFail();
         }
-        else
+        else if(bossDead)
         {
-
-            GameManager.instance.LevelComplete();
-
-
             Destroy(gameObject);
             int randomInt = Random.Range(0, 5);
             if(randomInt > 3)

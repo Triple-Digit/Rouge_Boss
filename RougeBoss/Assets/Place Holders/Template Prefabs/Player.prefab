@@ -255,6 +255,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   aimDirection: {fileID: 1695382999066098809}
+  dashSpeed: 0
+  dashLength: 0
+  grenadeSpeed: 0
+  hasItem: 0
+  grenade: {fileID: 0}
+  playerHealth: {fileID: 1186878662533427126}
 --- !u!114 &1186878662533427126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,9 +278,10 @@ MonoBehaviour:
   currentBossHealth: 0
   maxPlayerHealth: 3
   currentPlayerHealth: 0
-  invincible: 0
   invincibilityDuration: 1
   dropFactor: 0
+  item: {fileID: 0}
+  invincible: 0
 --- !u!61 &1976935209
 BoxCollider2D:
   m_ObjectHideFlags: 0

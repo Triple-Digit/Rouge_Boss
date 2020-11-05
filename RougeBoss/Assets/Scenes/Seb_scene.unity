@@ -206,18 +206,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
---- !u!1001 &38793035885106916
-=======
 --- !u!1001 &179079100
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< Updated upstream
     - target: {fileID: 38793036938892162, guid: 5c6f8c59ec083ac4ab23eeb12b744c66, type: 3}
       propertyPath: m_Name
       value: IceLevel
@@ -269,7 +264,6 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c6f8c59ec083ac4ab23eeb12b744c66, type: 3}
 --- !u!1001 &1329332755417451450
-=======
     - target: {fileID: 3560744644657109423, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: m_MatchWidthOrHeight
       value: 1
@@ -818,14 +812,12 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1654953730
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< Updated upstream
     - target: {fileID: 3090158582823746228, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -904,7 +896,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 746fa6e10aa43a044a7f6c9b7320afd6, type: 3}
-=======
     - target: {fileID: 2874903622052129468, guid: 387e421f2eaa7b44d811f9cd20f6f2d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1220,4 +1211,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> Stashed changes
