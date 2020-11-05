@@ -10,23 +10,22 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] Transform aimDirection;
 
+    [SerializeField] float dashSpeed, dashLength, grenadeSpeed;
+    public bool hasItem;
+
     private Animator animator;
     private bool isWalking;
-
-
-    [SerializeField] float dashSpeed, dashLength, grenadeSpeed;
-    [SerializeField] bool hasItem;
+    
     [SerializeField] GameObject grenade;
 
 
     Rigidbody2D body;
     Camera gameCamera;
     Vector2 moveInput;
-    Health playerHealth;
+    public Health playerHealth;
 
     private void Awake()
     {
-        animator = transform.Find("Player_Sprite").GetComponent<Animator>();
         instance = this;
         gameCamera = Camera.main;
         body = GetComponent<Rigidbody2D>();
@@ -35,15 +34,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Move();
-        isWalking = (Mathf.Abs(moveInput.x) + Mathf.Abs(moveInput.y)) > 0;
-        animator.SetBool("IsWalking", isWalking);
-        Aim();
-
-        ManageAnimations();
-
         UseItem();
-
+        Move();
+        Aim();
+        UseItem();
+        ManageAnimations();
     }
 
     void Move()
@@ -51,13 +46,11 @@ public class PlayerController : MonoBehaviour
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput.Normalize();
-
-
         if (isWalking)
         {
             body.velocity = moveInput * moveSpeed;
         }
-       // body.velocity = moveInput * moveSpeed;
+        body.velocity = moveInput * activeMoveSpeed;
     }
 
 
@@ -82,6 +75,8 @@ public class PlayerController : MonoBehaviour
         aimDirection.rotation = Quaternion.Euler(0, 0, angle);
     }
 
+
+
     void ManageAnimations()
     {
         if (isWalking)
@@ -90,11 +85,14 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Vertical", moveInput.y);
             animator.SetFloat("Magnitude", moveInput.sqrMagnitude);
         }
+
     }
+
+
     void UseItem()
     {
-        if (hasItem)
-        {
+         if (hasItem)
+         {
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 activeMoveSpeed = dashSpeed;
@@ -116,17 +114,22 @@ public class PlayerController : MonoBehaviour
             }
 
 
-        }
 
-        if (dashCounter > 0)
+         }
+
+        if(dashCounter > 0)
         {
             dashCounter -= Time.deltaTime;
-            if (dashCounter <= 0)
+            if(dashCounter<=0)
             {
                 activeMoveSpeed = moveSpeed;
                 playerHealth.invincible = false;
             }
         }
+
+
     }
-}
+ }
+
+    
 

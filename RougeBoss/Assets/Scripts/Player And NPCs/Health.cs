@@ -9,16 +9,12 @@ public class Health : MonoBehaviour
     [SerializeField] int maxPlayerHealth, currentPlayerHealth;    
     [SerializeField] float invincibilityDuration;
     [SerializeField] int dropFactor=1;
-
+    [SerializeField] GameObject item;
     private bool bossDead;
-
-
     public bool invincible;
-
 
     private void Awake()
     {
-
         if(isPlayer)
         {
             currentPlayerHealth = maxPlayerHealth;
@@ -26,32 +22,25 @@ public class Health : MonoBehaviour
         }
         else
         {
-            bossDead = false;
             currentBossHealth = maxBossHealth;
-            UIManager.instance.SetBossHealth(maxBossHealth);
+            UIManager.instance.SetBossHealth(currentBossHealth);
         }
                 
     }
 
     public void TakeDamage(float damageAmount)
     {
-        if (!isPlayer)
+        if(!isPlayer)
         {
             currentBossHealth = currentBossHealth - damageAmount;
             UIManager.instance.SetBossHealth(currentBossHealth);
-            //if(currentBossHealth < 25)
-            //{
-            //    GetComponent<BossController>().halfHealth = true;
-            //}
-            if (currentBossHealth <= 0 && !bossDead)
+            if(currentBossHealth < 5)
             {
-
-                bossDead = true;
-
-                if (bossDead)
-                {
-                    Dead();
-                }
+                GetComponent<BossController>().halfHealth = true;
+            }
+            if (currentBossHealth <= 0)
+            {
+                Dead();
             }
         }
         else
@@ -98,10 +87,21 @@ public class Health : MonoBehaviour
         {
             GameManager.instance.LevelFail();
         }
-        else if(bossDead)
+        else
         {
+
+            GameManager.instance.LevelComplete();
+
+
             Destroy(gameObject);
-            GameManager.instance.LevelComplete();         
+            int randomInt = Random.Range(0, 5);
+            if(randomInt > 3)
+            {
+                Instantiate(item);
+            }
+            
+            GameManager.instance.ClearLevel();         
+
         }
     }
 
