@@ -20,7 +20,7 @@ public class SelectWeapon : MonoBehaviour
 
     private void Start()
     {
-        int unlockCounter = GameManager.Instance.weaponUnlock;
+        int unlockCounter = GameManager.Instance.highestDifficulty;
         bool WeaponUnlocked = unlockCounter >= WeaponRequirement;
         GetComponent<Button>().interactable = WeaponUnlocked;
         sprite.sprite = guns.sprite;

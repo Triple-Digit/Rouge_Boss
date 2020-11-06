@@ -57,7 +57,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] hardBossPrefabs;
     public int difficultyFactor = 1;
     public int playerWeaponIndex = 0;
-    public int weaponUnlock = 0;
+    private int currentDifficulty;
+    public int highestDifficulty = 1;
 
     [Header("Managers")]
     [SerializeField] SoundManager soundManager;
@@ -67,7 +68,14 @@ public class GameManager : MonoBehaviour
     private GameObject HUD;
 
 
-   
+
+    private void Update()
+    {
+        if(currentDifficulty >= highestDifficulty)
+        {
+            highestDifficulty = currentDifficulty;
+        }
+    }
     public void LoadLevel()
     {
         if (!HUD.activeSelf)
@@ -115,6 +123,7 @@ public class GameManager : MonoBehaviour
 
     public void LevelComplete()
     {
+        currentDifficulty = difficultyFactor;
         ++difficultyFactor;
         PlayerController.instance.playerHealth.invincible = false;
         LoadLevel();
@@ -122,7 +131,6 @@ public class GameManager : MonoBehaviour
 
     public void LevelFail()
     {
-        weaponUnlock += difficultyFactor;
         HUD.SetActive(false);
         SceneManager.LoadScene("Upgrade_scene");
     }
