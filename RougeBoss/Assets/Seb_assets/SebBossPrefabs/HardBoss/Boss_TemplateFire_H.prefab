@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  maxBossHealth: 80
+  maxBossHealth: 70
   currentBossHealth: 0
   maxPlayerHealth: 0
   currentPlayerHealth: 0
